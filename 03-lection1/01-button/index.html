@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./button.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./button.css" />
+    <style>
+      .container {
+        width: 1100px;
+        display: flex;
+      }
 
-    </body>
+      .container__section-title {
+        width: 30%;
+      }
+
+      .container__section-content {
+        width: 90%;
+        display: flex;
+        /* flex-direction: row; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__section-title">
+        <div class="container__title">Buttons</div>
+      </div>
+
+      <div class="container__section-content">
+        <div class="container__row">
+          <div class="container__cell">
+            <button class="button -primary-default">Primary</button>
+          </div>
+          <div class="container__cell">
+            <button class="button -secondary-default">Secondary</button>
+          </div>
+          <div class="container__cell">
+            <button class="button -alternate-default">Alternate</button>
+          </div>
+        </div>
+
+        <div class="container__row">
+          <div class="container__cell">
+            <button class="button -primary-hover">Primary</button>
+          </div>
+          <div class="container__cell">
+            <button class="button -secondary-hover">Secondary</button>
+          </div>
+          <div class="container__cell">
+            <button class="button -alternate-hover">Alternate</button>
+          </div>
+        </div>
+        
+        <div class="container__row">
+          <div class="container__cell">
+            <button class="button -primary-disabled">Primary</button>
+          </div>
+          <div class="container__cell">
+            <button class="button -secondary-disabled">Secondary</button>
+          </div>
+          <div class="container__cell">
+            <button class="button -alternate-disabled">Alternate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
