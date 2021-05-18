@@ -1,50 +1,69 @@
 /* Стилизация кнопки */
 .button {
   height: 48px;
-  width: 189px;
-  left: 0px;
-  top: 0px;
   border-radius: 8px;
   border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
 }
 
+/* .button_block {
+  display: block;
+} */
+
+/* .button_full-width {
+  width: 100%;
+} */
+
 /* primary */
-.button_primary-default {
+.button_primary {
   background: #4263eb;
 }
 
-.button_primary-hover {
+.button_primary-hover:hover {
   background: #2342c0;
 }
 
-.button_primary-disabled {
+.button_primary-disabled:disabled {
   background: #4263eb;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 /* secondary */
-.button_secondary-default {
+.button_secondary {
   background: #7048e8;
 }
 
-.button_secondary-hover {
+.button_secondary-hover:hover {
   background: #5028c6;
 }
 
-.button_secondary-disabled {
+.button_secondary-disabled:disabled {
   background: #7048e8;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 /* alternate */
-.button_alternate-default {
+.button_alternate {
+  color: #495057;
   border: 1px solid #acb5bd;
 }
 
-.button_alternate-hover {
+.button_alternate-hover:hover {
+  color: #495057;
   border: 1px solid #212429;
 }
 
-.button_alternate-disabled {
+.button_alternate-disabled:disabled {
+  color: #495057;
   border: 1px solid #acb5bd;
+  opacity: 0.5;
+  pointer-events: none;
 }
