@@ -5,45 +5,46 @@
   left: 0px;
   top: 0px;
   border-radius: 8px;
+  border: none;
 }
 
 /* primary */
-.button.-primary-default {
+.button_primary-default {
   background: #4263eb;
 }
 
-.button.-primary-hover {
+.button_primary-hover {
   background: #2342c0;
 }
 
-.button.-primary-disabled {
+.button_primary-disabled {
   background: #4263eb;
   opacity: 0.5;
 }
 
 /* secondary */
-.button.-secondary-default {
+.button_secondary-default {
   background: #7048e8;
 }
 
-.button.-secondary-hover {
+.button_secondary-hover {
   background: #5028c6;
 }
 
-.button.-secondary-disabled {
+.button_secondary-disabled {
   background: #7048e8;
   opacity: 0.5;
 }
 
 /* alternate */
-.button.-alternate-default {
+.button_alternate-default {
   border: 1px solid #acb5bd;
 }
 
-.button.-alternate-hover {
+.button_alternate-hover {
   border: 1px solid #212429;
 }
 
-.button.-alternate-disabled {
+.button_alternate-disabled {
   border: 1px solid #acb5bd;
 }
