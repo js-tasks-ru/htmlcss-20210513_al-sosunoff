@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+
+    <style>
+      .container {
+        width: 1100px;
+        display: flex;
+        margin: 0 auto;
+      }
+
+      .container__section-title {
+        width: 30%;
+      }
+
+      .container__section-title_flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container__section-content {
+        width: 90%;
+      }
+
+      .container__section-content_space-evenly {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .container__title {
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="container__section-title container__section-title_flex-center"
+      >
+        <div class="container__title">Accordion</div>
+      </div>
+      <div class="container__section-content">
         <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
+          <summary>Accordion item 1</summary>
+          <p>Hidden content</p>
         </details>
-    </body>
+
+        <details>
+          <summary>Accordion item 2</summary>
+          <p>Hidden content</p>
+        </details>
+
+        <details>
+          <summary>Accordion item 3</summary>
+          <p>Hidden content</p>
+        </details>
+      </div>
+    </div>
+  </body>
 </html>
