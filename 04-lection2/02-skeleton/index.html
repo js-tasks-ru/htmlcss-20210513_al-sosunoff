@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <!-- Страница со скелетоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./skeleton.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./skeleton.css" />
 
-    </body>
+    <style>
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="skeleton">
+        <div class="flex-container flex-container_fd-r flex-container_g-8">
+          <div class="skeleton__circle"></div>
+
+          <div
+            class="
+              flex-container
+              flex-container_fd-c
+              flex-container_f-1
+              flex-container_g-8
+              flex-container_jc-c
+            "
+          >
+            <div class="skeleton__line" style="--percent: 50%"></div>
+            <div class="skeleton__line" style="--percent: 75%"></div>
+          </div>
+        </div>
+
+        <div
+          class="
+            flex-container
+            flex-container_fd-c
+            flex-container_f-1
+            flex-container_g-8
+          "
+        >
+          <div class="skeleton__line"></div>
+          <div class="skeleton__line"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

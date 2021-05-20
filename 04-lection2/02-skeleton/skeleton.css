@@ -1,0 +1,56 @@
+.skeleton {
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skeleton__circle {
+  background: var(--grey-2);
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.skeleton__line {
+  display: inline-block;
+  height: 20px;
+  width: var(--percent, 100);
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container_g-8 {
+  gap: 8px;
+}
+
+.flex-container_jc-c {
+  justify-content: center;
+}
+
+.flex-container_fd-r {
+  flex-direction: row;
+}
+
+.flex-container_fd-c {
+  flex-direction: column;
+}
+
+.flex-container_f-1 {
+  flex: 1;
+  gap: 8px;
+}
