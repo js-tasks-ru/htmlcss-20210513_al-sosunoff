@@ -9,11 +9,32 @@
   gap: 24px;
 }
 
-.skeleton__circle {
+.skeleton__info-top {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.skeleton__description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
+.skeleton__logo {
   background: var(--grey-2);
   width: 64px;
   height: 64px;
   border-radius: 100%;
+}
+
+.skeleton__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+  justify-content: center;
 }
 
 .skeleton__line {
@@ -28,29 +49,4 @@
     #e3e7ea 77.5%,
     #dde2e5 102.52%
   );
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-container_g-8 {
-  gap: 8px;
-}
-
-.flex-container_jc-c {
-  justify-content: center;
-}
-
-.flex-container_fd-r {
-  flex-direction: row;
-}
-
-.flex-container_fd-c {
-  flex-direction: column;
-}
-
-.flex-container_f-1 {
-  flex: 1;
-  gap: 8px;
 }
