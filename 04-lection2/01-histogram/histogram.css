@@ -51,7 +51,7 @@
 
 .chart__column {
   background: var(--blue);
-  height: calc(100px * var(--percent, 100) / 100);
+  height: calc(100px * var(--percent, 0) / 100);
   flex: 1;
   transition: .2s linear;
 }
