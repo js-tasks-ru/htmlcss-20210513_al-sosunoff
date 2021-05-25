@@ -32,6 +32,10 @@
   --alternate: var(--cadet-blue-kraiola);
   --alternate-hover: var(--black-gray);
   --alternate-active: var(--serovato-blue);
+
+  --calendar-day: #90a0b7;
+  --calendar-item: #334d6e;
+  --calendar-between: #eceffd;
 }
 
 * {
