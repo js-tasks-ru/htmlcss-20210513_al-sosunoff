@@ -1,7 +1,40 @@
 .header {
-  padding: 97px 0 77px;
+  padding-top: 25px;
+  height: 237px;
   background-color: var(--white);
 }
 
-.header__heading {
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--black);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu__item {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: var(--grey-3);
+}
+
+.menu__item_active {
+  color: var(--black);
 }

@@ -1,4 +1,6 @@
 .main {
-  height: 1036px;
   background-color: #f9fafc;
+  flex-grow: 1;
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
 }
