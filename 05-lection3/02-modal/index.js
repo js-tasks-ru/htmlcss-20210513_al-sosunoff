@@ -4,6 +4,7 @@
     const modalOpen = document.getElementById('modal-open');
 
     if (!close || !modalOpen || !modal) {
+        console.log(1);
         return;
     }
 
