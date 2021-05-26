@@ -4,6 +4,9 @@
   border: 1px solid var(--grey-3);
   box-sizing: border-box;
   border-radius: 8px;
+  --calendar-day: #90a0b7;
+  --calendar-item: #334d6e;
+  --calendar-between: #eceffd;
 }
 
 .calendar__wrapper {
@@ -14,8 +17,6 @@
 .calendar__inner {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  justify-items: stretch;
-  align-items: stretch;
 
   position: absolute;
   top: 0;
@@ -32,6 +33,7 @@
   font-size: 20px;
   line-height: 24px;
   color: var(--calendar-item);
+  margin-bottom: 24px;
 }
 
 .calendar__item {
@@ -44,7 +46,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: var(--calendar-item);
   grid-column-start: var(--start-day, 0);
 }
@@ -55,9 +56,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
   color: var(--calendar-day);
 }
 
