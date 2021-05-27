@@ -35,7 +35,7 @@
 .modal__item {
   width: 428px;
   padding: 30px 40px;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 8px;
   position: relative;
 }
