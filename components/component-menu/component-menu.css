@@ -7,9 +7,8 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--black);
   margin: 16px 0px;
-  margin-bottom: 16px;
 }
 
 .component-menu__link {
