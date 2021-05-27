@@ -1,0 +1,26 @@
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip:hover .tooltip__helper {
+}
+
+.tooltip__helper {
+  position: absolute;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--grey-2);
+
+  background: var(--blue);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  padding: 13px 21px 8px;
+
+  width: 130px;
+}
