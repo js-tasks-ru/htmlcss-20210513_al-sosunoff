@@ -1,0 +1,7 @@
+.component-layout {
+  display: grid;
+  grid-template-columns: 229px 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  gap: 56px;
+}
