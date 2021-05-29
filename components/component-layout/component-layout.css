@@ -5,3 +5,12 @@
   height: 100%;
   gap: 56px;
 }
+
+@media screen and (max-width: 375px) {
+  .component-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    /* height: 100%; */
+    /* gap: 56px; */
+  }
+}
