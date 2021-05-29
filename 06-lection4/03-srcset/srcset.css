@@ -8,8 +8,6 @@
 
 @media (min-resolution: 2dppx) {
   .srcset {
-    width: 300px;
-    width: 300px;
     background-image: url('./public/forest_768.jpg');
   }
 }
