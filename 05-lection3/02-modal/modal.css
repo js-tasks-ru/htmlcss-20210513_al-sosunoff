@@ -30,6 +30,14 @@
   top: 12px;
   right: 12px;
   cursor: pointer;
+  color: var(--grey-4);
+  width: 16px;
+  height: 16px;
+  transition: 0.1s all linear;
+}
+
+.modal__close:hover {
+  opacity: 0.5;
 }
 
 .modal__item {
