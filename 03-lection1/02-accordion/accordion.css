@@ -43,3 +43,9 @@ details[open] .accordion__marker {
   line-height: 24px;
   color: var(--grey-4);
 }
+
+.accordion__icon {
+  width: 18px;
+  height: 10px;
+  fill: none;
+}
