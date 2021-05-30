@@ -1,4 +1,21 @@
 .avatar {
   border-radius: 100%;
   object-fit: cover;
+  width: var(--size, 102px);
+  height: var(--size, 102px);
+}
+
+.avatar_sm {
+  width: 64px;
+  height: 64px;
+}
+
+.avatar_md {
+  width: 102px;
+  height: 102px;
+}
+
+.avatar_lg {
+  width: 128px;
+  height: 128px;
 }
