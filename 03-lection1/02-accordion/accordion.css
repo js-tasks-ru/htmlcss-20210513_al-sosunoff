@@ -47,5 +47,5 @@ details[open] .accordion__marker {
 .accordion__icon {
   width: 18px;
   height: 10px;
-  fill: none;
+  color: var(--black);
 }
