@@ -2,13 +2,17 @@
 <!-- Главная страница -->
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./components/page/page.css" />
     <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/menu/menu.css" />
     <link rel="stylesheet" href="./components/main/main.css" />
     <link rel="stylesheet" href="./components/cards/cards.css" />
     <link rel="stylesheet" href="./components/card/card.css" />
     <link rel="stylesheet" href="./components/footer/footer.css" />
+    <link rel="stylesheet" href="./components/logo/logo.css" />
     <style></style>
   </head>
   <body>
@@ -17,37 +21,12 @@
         <div class="page__box">
           <div class="header__top">
             <div class="logo">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="30" height="30" fill="#212429" />
-              </svg>
-
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="32" height="32" rx="16" fill="#212429" />
-              </svg>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0L32 32H0V0Z" fill="#212429" />
+              <svg class="logo__icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./components/logo/logo.svg#logo"></use>
               </svg>
             </div>
 
-            <div class="menu">
+            <!-- <div class="menu">
               <div class="menu__item menu__item_active">Components</div>
               <div class="menu__item">About</div>
               <div class="menu__item">Contact</div>
@@ -171,7 +150,7 @@
                   />
                 </svg>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -183,7 +162,7 @@
       <main class="main">
         <div class="page__box cards">
           <div class="card">
-            <div class="card__content"></div>
+          <div class="card__content"></div>
             <div class="card__title">Title</div>
             <div class="card__description">description</div>
           </div>
