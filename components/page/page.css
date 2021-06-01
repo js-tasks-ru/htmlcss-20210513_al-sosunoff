@@ -8,3 +8,9 @@
   max-width: 1110px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 375px) {
+  .page__box {
+    padding: 0 16px;
+  }
+}
