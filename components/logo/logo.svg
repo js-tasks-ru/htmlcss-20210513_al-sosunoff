@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="logo">
+            <rect x="0" width="30" height="30" fill="currentColor" />
+            <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
+            <path d="M78 0 L110 32 H78 V0 Z" fill="currentColor" />
+        </symbol>
+    </defs>
+</svg>
