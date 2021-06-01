@@ -6,16 +6,16 @@
 }
 
 .avatar_sm {
-  width: 64px;
-  height: 64px;
+  width: var(--size-sm, 64px);
+  height: var(--size-sm, 64px);
 }
 
 .avatar_md {
-  width: 102px;
-  height: 102px;
+  width: var(--size-md, 102px);
+  height: var(--size-md, 102px);
 }
 
 .avatar_lg {
-  width: 128px;
-  height: 128px;
+  width: var(--size-lg, 128px);
+  height: var(--size-lg, 128px);
 }
