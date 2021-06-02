@@ -1,15 +1,14 @@
-.form-checkbox {
+.form-checkboxbox {
 }
 
-.form-check__label-container {
+.form-checkbox__label-container {
   display: flex;
   gap: 12px;
   align-items: center;
-  cursor: pointer;
   position: relative;
 }
 
-.form-check__input-icon {
+.form-checkbox__input-icon {
   position: absolute;
   width: 28px;
   height: 28px;
@@ -17,9 +16,10 @@
   padding: 8px 0px 0px 7px;
   color: var(--white);
   fill: none;
+  cursor: pointer;
 }
 
-.form-check__input {
+.form-checkbox__input {
   background-size: contain;
   cursor: pointer;
   appearance: none;
@@ -31,24 +31,27 @@
   height: 28px;
 }
 
-/* .form-check__input:focus-visible ~ .form-checkbox__title{
+/* .form-checkbox__input:focus-visible ~ .form-checkboxbox__title{
   text-decoration: underline;
 } */
 
-.form-check__input:checked {
+.form-checkbox__input:checked {
   background-color: var(--blue);
 }
 
-.form-check__input:disabled {
+.form-checkbox__input:disabled {
   background-color: var(--grey-2);
+  cursor: default;
 }
 
-.form-check__input:disabled ~ .form-checkbox__title {
+.form-checkbox__input:disabled ~ .form-checkbox__title {
   color: var(--grey-2);
+  cursor: default;
 }
 
-.form-check__input:disabled ~ .form-check__input-icon {
+.form-checkbox__input:disabled ~ .form-checkbox__input-icon {
   display: none;
+  cursor: default;
 }
 
 .form-checkbox__title {
@@ -58,4 +61,5 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--grey-4);
+  cursor: pointer;
 }
