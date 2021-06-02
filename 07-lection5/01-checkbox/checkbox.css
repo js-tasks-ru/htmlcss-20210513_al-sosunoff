@@ -31,6 +31,10 @@
   height: 28px;
 }
 
+/* .form-check__input:focus-visible ~ .form-checkbox__title{
+  text-decoration: underline;
+} */
+
 .form-check__input:checked {
   background-color: var(--blue);
 }
