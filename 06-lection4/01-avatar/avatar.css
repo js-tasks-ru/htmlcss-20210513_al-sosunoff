@@ -1,0 +1,21 @@
+.avatar {
+  border-radius: 100%;
+  object-fit: cover;
+  width: var(--size, 102px);
+  height: var(--size, 102px);
+}
+
+.avatar_sm {
+  width: var(--size-sm, 64px);
+  height: var(--size-sm, 64px);
+}
+
+.avatar_md {
+  width: var(--size-md, 102px);
+  height: var(--size-md, 102px);
+}
+
+.avatar_lg {
+  width: var(--size-lg, 128px);
+  height: var(--size-lg, 128px);
+}
