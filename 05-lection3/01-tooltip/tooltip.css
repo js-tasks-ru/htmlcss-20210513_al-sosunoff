@@ -7,17 +7,19 @@
 .tooltip__trigger {
   width: 24px;
   height: 24px;
-  z-index: 1;
   color: var(--black);
+  z-index: 1;
 }
 
 .tooltip__trigger:hover ~ .tooltip__helper {
   opacity: 1;
+  visibility: visible;
   transform: translateY(calc(-50% - 19px));
 }
 
 .tooltip__helper {
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   font-family: Inter;
   font-style: normal;
