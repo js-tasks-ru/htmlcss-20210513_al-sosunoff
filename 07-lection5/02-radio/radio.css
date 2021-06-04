@@ -1,71 +1,69 @@
-.form-radio {
-}
-
-.form-radio__label-container {
+.radio__state {
   display: flex;
   gap: 12px;
   align-items: center;
-
   position: relative;
 }
 
-.form-radio__input {
+.radio__input {
   outline: none;
-  background-size: contain;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radio__control {
+  position: relative;
   cursor: pointer;
-  appearance: none;
-  background-color: var(--white);
   border: 1px solid var(--grey-2);
-  box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 100%;
   width: 28px;
   height: 28px;
+  color: var(--white);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.radio__icon {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  border: 3px solid var(--white);
   border-radius: 100%;
 }
 
-.form-radio__input:checked {
+.radio__title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
   background-color: var(--blue);
 }
 
-.form-radio__input:disabled {
+.radio__input:disabled ~ .radio__state .radio__control {
   background-color: var(--grey-2);
   cursor: default;
 }
 
-.form-radio__input-icon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  align-items: center;
-  padding: 8px 0px 0px 7px;
-  border: 3px solid var(--white);
-  border-radius: 100%;
-  margin-left: 4px;
-  cursor: pointer;
-}
-
-.form-radio__input:disabled ~ .form-radio__input-icon {
+.radio__input:disabled ~ .radio__state .radio__control .radio__icon {
   display: none;
-  pointer-events: none;
   cursor: default;
 }
 
-.form-radio__title {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--grey-4);
-  cursor: pointer;
-}
-
-.form-radio__input:disabled ~ .form-radio__title {
+.radio__input:disabled ~ .radio__state .radio__title {
   color: var(--grey-2);
-  pointer-events: none;
   cursor: default;
 }
 
-.form-radio__input:focus ~ .form-radio__title {
+.radio__input:focus ~ .radio__state .radio__title {
   text-decoration: underline;
 }
