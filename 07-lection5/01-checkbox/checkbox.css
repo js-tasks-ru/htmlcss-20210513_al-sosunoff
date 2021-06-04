@@ -1,52 +1,43 @@
-.form-checkboxbox {
-}
-
-.form-checkbox__label-container {
+.checkbox__state {
   display: flex;
   gap: 12px;
   align-items: center;
   position: relative;
 }
 
-.form-checkbox__input-icon {
+.checkbox__input {
+  outline: none;
+  width: 0px;
+  height: 0px;
   position: absolute;
-  width: 28px;
-  height: 28px;
-  align-items: center;
-  padding: 8px 0px 0px 7px;
-  color: var(--white);
-  fill: none;
-  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
 }
 
-.form-checkbox__input {
-  outline: none;
-  background-size: contain;
+.checkbox__control {
+  position: relative;
   cursor: pointer;
-  appearance: none;
-  background-color: var(--white);
   border: 1px solid var(--grey-2);
-  box-sizing: border-box;
   border-radius: 4px;
   width: 28px;
   height: 28px;
+  color: var(--white);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-.form-checkbox__input:checked {
-  background-color: var(--blue);
+.checkbox__icon {
+  fill: none;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
 }
 
-.form-checkbox__input:disabled {
-  background-color: var(--grey-2);
-  cursor: default;
-}
-
-.form-checkbox__input:disabled ~ .form-checkbox__input-icon {
-  display: none;
-  cursor: default;
-}
-
-.form-checkbox__title {
+.checkbox__title {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -56,11 +47,28 @@
   cursor: pointer;
 }
 
-.form-checkbox__input:disabled ~ .form-checkbox__title {
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+  background-color: var(--blue);
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+  background-color: var(--grey-2);
+  cursor: default;
+}
+
+.checkbox__input:disabled
+  ~ .checkbox__state
+  .checkbox__control
+  .checkbox__icon {
+  display: none;
+  cursor: default;
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
   color: var(--grey-2);
   cursor: default;
 }
 
-.form-checkbox__input:focus ~ .form-checkbox__title {
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
   text-decoration: underline;
 }
