@@ -15,74 +15,58 @@
     </style>
   </head>
   <body>
-    <div class="form-input">
-      <label class="form-input__label-container">
-        <div class="form-input__title">Disabled</div>
+    <label class="form-input">
+      <div class="form-input__title">Disabled</div>
 
-        <div class="input-container">
-          <input
-            class="input-container__input input-container__input_disabled"
-            type="text"
-            value="Disabled"
-          />
-        </div>
-      </label>
-    </div>
+      <div class="input">
+        <input class="input__field" type="text" value="Disabled" disabled />
+      </div>
+    </label>
 
-    <div class="form-input">
-      <label class="form-input__label-container">
-        <div class="form-input__title">Success</div>
+    <label class="form-input">
+      <div class="form-input__title">Success</div>
 
-        <div class="input-container">
-          <input class="input-container__input" type="text" value="Success" />
+      <div class="input">
+        <input class="input__field" type="text" value="Success" />
 
-          <svg
-            class="
-              input-container__input-icon input-container__input-icon_success
-            "
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use xlink:href="../../assets/svg-sprite.svg#success"></use>
-          </svg>
-        </div>
-      </label>
-    </div>
+        <svg
+          class="input__icon input__icon_success"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use xlink:href="../../assets/svg-sprite.svg#success"></use>
+        </svg>
+      </div>
+    </label>
 
-    <div class="form-input">
-      <label class="form-input__label-container">
-        <div class="form-input__title">Focus</div>
+    <label class="form-input">
+      <div class="form-input__title">Focus</div>
 
-        <div class="input-container">
-          <input
-            class="input-container__input input-container__input_focus"
-            type="text"
-            value="Focus"
-          />
-        </div>
-      </label>
-    </div>
+      <div class="input">
+        <input
+          class="input__field input__field_focus"
+          type="text"
+          value="Focus"
+        />
+      </div>
+    </label>
 
-    <div class="form-input">
-      <label class="form-input__label-container">
-        <div class="form-input__title">Error</div>
+    <label class="form-input">
+      <div class="form-input__title">Error</div>
 
-        <div class="input-container">
-          <input
-            class="input-container__input input-container__input_error"
-            type="text"
-            value="Error"
-          />
+      <div class="input">
+        <input
+          class="input__field input__field_error"
+          type="text"
+          value="Error"
+        />
 
-          <svg
-            class="
-              input-container__input-icon input-container__input-icon_error
-            "
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use xlink:href="../../assets/svg-sprite.svg#error"></use>
-          </svg>
-        </div>
-      </label>
-    </div>
+        <svg
+          class="input__icon input__icon_error"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use xlink:href="../../assets/svg-sprite.svg#error"></use>
+        </svg>
+      </div>
+    </label>
   </body>
 </html>
