@@ -1,37 +1,33 @@
-.form-toggler {
-}
+/* .toggler {} */
 
-.form-toggler__label-container {
+.toggler__state {
   display: flex;
   gap: 12px;
   align-items: center;
   position: relative;
 }
 
-.form-toggler__input {
+.toggler__input {
   outline: none;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.toggler__control {
   position: relative;
-  background-size: contain;
-  cursor: pointer;
-  appearance: none;
   background-color: var(--white);
   border: 1px solid var(--grey-2);
   box-sizing: border-box;
   width: 52px;
   height: 28px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
-.form-toggler__input:checked {
-  background-color: var(--blue);
-}
-
-.form-toggler__input:disabled {
-  background-color: var(--grey-2);
-  cursor: default;
-}
-
-.form-toggler__input::before {
+.toggler__control::before {
   content: '';
   transition: left 0.1s linear;
   background-color: var(--grey-2);
@@ -40,34 +36,38 @@
   top: 1px;
   left: 1px;
   border-radius: 16px;
-  display: block;
   position: absolute;
 }
 
-.form-toggler__input:checked:before {
-  left: 24px;
-}
-
-.form-toggler__input:disabled:before {
-  background-color: var(--grey-3);
-}
-
-.form-toggler__title {
+.toggler__title {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--grey-4);
   cursor: pointer;
 }
 
-.form-toggler__input:disabled ~ .form-toggler__title {
-  color: var(--grey-2);
-  pointer-events: none;
+.toggler__input:checked ~ .toggler__state .toggler__control {
+  background-color: var(--blue);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control:before {
+  left: 24px;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+  background-color: var(--grey-3);
   cursor: default;
 }
 
-.form-toggler__input:focus ~ .form-toggler__title {
+.toggler__input:checked ~ .toggler__state .toggler__control:before {
+  left: 24px;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__title {
+  color: var(--grey-2);
+  cursor: default;
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__title {
   text-decoration: underline;
 }
