@@ -47,7 +47,7 @@
 #all-tab:checked ~ .tabs__scroller [for='all-tab'] {
   color: var(--black);
 }
-#all-tab:checked ~ .tabs__content {
+#all-tab:checked ~ .tabs__content_all {
   display: block;
 }
 #all-tab:checked ~ .tabs__scroller [for='all-tab']::before {

@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 38px;
+  padding: 32px 25px;
 
   height: 367px;
   background: var(--white);
@@ -11,6 +11,13 @@
 
 .card__content {
   flex-grow: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__content_display-block {
+  display: block;
 }
 
 .card__title {
