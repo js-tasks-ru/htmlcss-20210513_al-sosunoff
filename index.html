@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./components/card/card.css" />
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <link rel="stylesheet" href="./components/logo/logo.css" />
+    <link rel="stylesheet" href="./components/tabs/tabs.css" />
     <style></style>
   </head>
   <body>
@@ -154,6 +155,42 @@
 
         <div class="page__box">
           <h1 class="header__title">Reusable component library</h1>
+        </div>
+
+        <div class="tabs">
+          <input
+            class="tabs__trigger"
+            type="radio"
+            id="all-tab"
+            name="tabs"
+            checked
+          />
+          <input
+            class="tabs__trigger"
+            type="radio"
+            id="complex-tab"
+            name="tabs"
+          />
+          <input
+            class="tabs__trigger"
+            type="radio"
+            id="simple-tab"
+            name="tabs"
+          />
+
+          <div class="tabs__scroller page__box">
+            <label class="tabs__label" for="all-tab">All components</label>
+            <label class="tabs__label" for="complex-tab">Complex</label>
+            <label class="tabs__label" for="simple-tab">Simple</label>
+          </div>
+
+          <div class="tabs__content tabs__content_complex">
+            <div class="page__box">1</div>
+          </div>
+
+          <div class="tabs__content tabs__content_simple">
+            <div class="page__box">2</div>
+          </div>
         </div>
       </header>
 
