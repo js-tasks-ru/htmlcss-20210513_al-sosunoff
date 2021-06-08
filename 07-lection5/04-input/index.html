@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
 
-    </body>
+    <style>
+      body {
+        padding: 50px;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <label class="form-input">
+      <div class="form-input__title">Disabled</div>
+
+      <div class="input">
+        <input class="input__field" type="text" value="Disabled" disabled />
+      </div>
+    </label>
+
+    <label class="form-input">
+      <div class="form-input__title">Success</div>
+
+      <div class="input">
+        <input class="input__field" type="text" value="Success" />
+
+        <svg
+          class="input__icon input__icon_success"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use xlink:href="../../assets/svg-sprite.svg#success"></use>
+        </svg>
+      </div>
+    </label>
+
+    <label class="form-input">
+      <div class="form-input__title">Focus</div>
+
+      <div class="input">
+        <input
+          class="input__field input__field_focus"
+          type="text"
+          value="Focus"
+        />
+      </div>
+    </label>
+
+    <label class="form-input">
+      <div class="form-input__title">Error</div>
+
+      <div class="input">
+        <input
+          class="input__field input__field_error"
+          type="text"
+          value="Error"
+        />
+
+        <svg
+          class="input__icon input__icon_error"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use xlink:href="../../assets/svg-sprite.svg#error"></use>
+        </svg>
+      </div>
+    </label>
+  </body>
 </html>
