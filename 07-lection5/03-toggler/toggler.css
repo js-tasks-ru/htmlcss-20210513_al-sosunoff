@@ -1,4 +1,6 @@
-/* .toggler {} */
+.toggler {
+  display: inline-block;
+}
 
 .toggler__state {
   display: flex;
