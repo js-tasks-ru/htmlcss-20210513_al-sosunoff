@@ -32,13 +32,13 @@
 
 .radio__icon {
   position: absolute;
-  width: 70%;
-  height: 70%;
+  width: 18px;
+  height: 18px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--white);
-  border: 3px solid var(--white);
+  background-color: var(--white);
   border-radius: 100%;
 }
 
@@ -47,9 +47,15 @@
   font-style: normal;
   font-weight: normal;
   cursor: pointer;
+
+  color: var(--grey-4);
 }
 
 .radio__input:checked ~ .radio__state .radio__control {
+  border: 2px solid var(--blue);
+}
+
+.radio__input:checked ~ .radio__state .radio__icon {
   background-color: var(--blue);
 }
 
