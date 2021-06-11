@@ -1,6 +1,6 @@
 .footer {
   padding: 71px 0;
-  background-color: #f9fafc;
+  background-color: var(--white);
 }
 
 .footer__title {
@@ -22,6 +22,6 @@
   line-height: 24px;
   text-align: center;
   color: var(--black);
-  width: 640px;
+  max-width: 640px;
   margin: 0 auto;
 }

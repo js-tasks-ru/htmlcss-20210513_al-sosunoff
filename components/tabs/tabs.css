@@ -1,4 +1,5 @@
 .tabs {
+  flex-grow: 1;
 }
 
 .tabs__trigger {
@@ -8,6 +9,11 @@
   position: absolute;
   pointer-events: none;
   opacity: 0;
+}
+
+.tabs__menu {
+  border-bottom: 1px solid var(--grey-2);
+  background-color: var(--white);
 }
 
 .tabs__scroller {
@@ -39,8 +45,9 @@
 }
 
 .tabs__content {
-  border-top: 1px solid var(--grey-2);
   display: none;
+  padding-top: 68px;
+  padding-bottom: 92px;
 }
 
 /* all tab */
@@ -54,24 +61,24 @@
   visibility: visible;
 }
 
-/* complex-tab */
-#complex-tab:checked ~ .tabs__scroller [for='complex-tab'] {
+/* container-tab */
+#container-tab:checked ~ .tabs__scroller [for='container-tab'] {
   color: var(--black);
 }
-#complex-tab:checked ~ .tabs__content_complex {
+#container-tab:checked ~ .tabs__content_container {
   display: block;
 }
-#complex-tab:checked ~ .tabs__scroller [for='complex-tab']::before {
+#container-tab:checked ~ .tabs__scroller [for='container-tab']::before {
   visibility: visible;
 }
 
-/* simple-tab */
-#simple-tab:checked ~ .tabs__scroller [for='simple-tab'] {
+/* element-tab */
+#element-tab:checked ~ .tabs__scroller [for='element-tab'] {
   color: var(--black);
 }
-#simple-tab:checked ~ .tabs__content_simple {
+#element-tab:checked ~ .tabs__content_element {
   display: block;
 }
-#simple-tab:checked ~ .tabs__scroller [for='simple-tab']::before {
+#element-tab:checked ~ .tabs__scroller [for='element-tab']::before {
   visibility: visible;
 }
