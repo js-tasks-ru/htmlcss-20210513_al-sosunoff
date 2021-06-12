@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="./components/card/card.css" />
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <link rel="stylesheet" href="./components/logo/logo.css" />
+    <link rel="stylesheet" href="./components/tabs/tabs.css" />
+    <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css" />
+    <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
+    <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css" />
+    <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css" />
+    <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css" />
+    <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css" />
     <style></style>
   </head>
   <body>
@@ -20,11 +27,9 @@
       <header class="header">
         <div class="page__box">
           <div class="header__top">
-            <div class="logo">
-              <svg class="logo__icon" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./components/logo/logo.svg#logo"></use>
-              </svg>
-            </div>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./components/logo/logo.svg#logo"></use>
+            </svg>
 
             <!-- <div class="menu">
               <div class="menu__item menu__item_active">Components</div>
@@ -160,43 +165,314 @@
       </header>
 
       <main class="main">
-        <div class="page__box cards">
-          <div class="card">
-          <div class="card__content"></div>
-            <div class="card__title">Title</div>
-            <div class="card__description">description</div>
+        <!-- <div class="page__box cards"></div> -->
+        <div class="tabs">
+          <input
+            class="tabs__trigger"
+            type="radio"
+            id="all-tab"
+            name="tabs"
+            checked
+          />
+          <input
+            class="tabs__trigger"
+            type="radio"
+            id="container-tab"
+            name="tabs"
+          />
+          <input
+            class="tabs__trigger"
+            type="radio"
+            id="element-tab"
+            name="tabs"
+          />
+
+          <div class="tabs__menu">
+            <div class="tabs__scroller page__box">
+              <label class="tabs__label" for="all-tab">All components</label>
+              <label class="tabs__label" for="container-tab">Container</label>
+              <label class="tabs__label" for="element-tab">Element</label>
+            </div>
           </div>
-          <div class="card">
-            <div class="card__content"></div>
-            <div class="card__title">Title</div>
-            <div class="card__description">description</div>
+
+          <div class="tabs__content tabs__content_all">
+            <div class="page__box">all</div>
           </div>
-          <div class="card">
-            <div class="card__content"></div>
-            <div class="card__title">Title</div>
-            <div class="card__description">description</div>
+
+          <div class="tabs__content tabs__content_container">
+            <div class="page__box cards">
+              <!-- Tooltip -->
+              <div class="card">
+                <div class="card__content">
+                  <div class="tooltip">
+                    <svg
+                      class="tooltip__trigger"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use xlink:href="../../assets/svg-sprite.svg#help"></use>
+                    </svg>
+
+                    <div class="tooltip__helper">Helper Text</div>
+                  </div>
+                </div>
+                <div class="card__title">Tooltip</div>
+                <div class="card__description">Container</div>
+              </div>
+              <!-- Tooltip -->
+
+              <!-- Calendar -->
+              <div class="card">
+                <div class="card__content card__content_display-block">
+                  <div class="calendar">
+                    <div class="calendar__title">Январь 2021</div>
+
+                    <div class="calendar__wrapper">
+                      <div class="calendar__inner">
+                        <div class="calendar__item calendar__item_day">Пн</div>
+                        <div class="calendar__item calendar__item_day">Вт</div>
+                        <div class="calendar__item calendar__item_day">Ср</div>
+                        <div class="calendar__item calendar__item_day">Чт</div>
+                        <div class="calendar__item calendar__item_day">Пт</div>
+                        <div class="calendar__item calendar__item_day">Сб</div>
+                        <div class="calendar__item calendar__item_day">Вс</div>
+                        <div class="calendar__item" style="--start-day: 5">
+                          1
+                        </div>
+                        <div class="calendar__item">2</div>
+                        <div class="calendar__item">3</div>
+                        <div class="calendar__item">4</div>
+                        <div class="calendar__item">5</div>
+                        <div class="calendar__item">6</div>
+                        <div class="calendar__item">7</div>
+                        <div class="calendar__item">8</div>
+                        <div class="calendar__item calendar__item_range-start">
+                          9
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          10
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          11
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          12
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          13
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          14
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          15
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          16
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          17
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          18
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          19
+                        </div>
+                        <div class="calendar__item calendar__item_range-end">
+                          20
+                        </div>
+                        <div class="calendar__item">21</div>
+                        <div class="calendar__item">22</div>
+                        <div class="calendar__item">23</div>
+                        <div class="calendar__item">24</div>
+                        <div class="calendar__item">25</div>
+                        <div class="calendar__item">26</div>
+                        <div class="calendar__item">27</div>
+                        <div class="calendar__item">28</div>
+                        <div class="calendar__item">29</div>
+                        <div class="calendar__item">30</div>
+                        <div class="calendar__item">31</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Calendar</div>
+                <div class="card__description">Container</div>
+              </div>
+              <!-- Calendar -->
+
+              <!-- Accordion -->
+              <div class="card">
+                <div class="card__content card__content_display-block">
+                  <div class="accordion">
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        Accordion item 1
+
+                        <svg
+                          class="accordion__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use
+                            xlink:href="../../assets/svg-sprite.svg#arrow"
+                          ></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </p>
+                    </details>
+
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        Accordion item 2
+
+                        <svg
+                          class="accordion__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use
+                            xlink:href="../../assets/svg-sprite.svg#arrow"
+                          ></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </p>
+                    </details>
+
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        Accordion item 3
+
+                        <svg
+                          class="accordion__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use
+                            xlink:href="../../assets/svg-sprite.svg#arrow"
+                          ></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+                <div class="card__title">Accordion</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Accordion -->
+            </div>
           </div>
-          <div class="card">
-            <div class="card__content"></div>
-            <div class="card__title">Title</div>
-            <div class="card__description">description</div>
-          </div>
-          <div class="card">
-            <div class="card__content"></div>
-            <div class="card__title">Title</div>
-            <div class="card__description">description</div>
-          </div>
-          <div class="card">
-            <div class="card__content"></div>
-            <div class="card__title">Title</div>
-            <div class="card__description">description</div>
+
+          <div class="tabs__content tabs__content_element">
+            <div class="page__box cards">
+              <!-- Histogram -->
+              <div class="card">
+                <div class="card__content card__content_display-block">
+                  <div class="histogram">
+                    <div class="histogram__header">
+                      <div class="histogram__title">Total orders</div>
+                      <div class="histogram__link">View all</div>
+                    </div>
+
+                    <div class="histogram__number">50254</div>
+
+                    <div class="chart">
+                      <div class="chart__column"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 95"></div>
+                      <div class="chart__column" style="--percent: 25"></div>
+                      <div class="chart__column" style="--percent: 35"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 95"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 25"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Histogram</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Histogram -->
+
+              <!-- Avatar -->
+              <div class="card">
+                <div class="card__content">
+                  <img
+                    class="avatar avatar_lg"
+                    src="./06-lection4/01-avatar/public/avatar-200.jpg"
+                    alt="аватар пользователя"
+                  />
+                </div>
+                <div class="card__title">Avatar</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Avatar -->
+
+              <!-- Skeleton -->
+              <div class="card">
+                <div class="card__content card__content_display-block">
+                  <div class="skeleton">
+                    <div class="skeleton__info-top">
+                      <div class="skeleton__logo"></div>
+
+                      <div class="skeleton__text">
+                        <div
+                          class="skeleton__line"
+                          style="--percent: 50%"
+                        ></div>
+                        <div
+                          class="skeleton__line"
+                          style="--percent: 75%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton__description">
+                      <div class="skeleton__line"></div>
+                      <div class="skeleton__line"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Skeleton</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Skeleton -->
+            </div>
           </div>
         </div>
       </main>
 
       <footer class="footer">
         <div class="page__box">
-          <p class="footer__title">Reusable component library</p>
+          <div class="footer__title">About</div>
+          <div class="footer__description">
+            This project is a collection of professionally designed, pre-built,
+            fully responsive HTML snippets you can drop into your projects. Get
+            started by checking out our free preview components, or browsing the
+            PNG previews in the categories you're most curious about.
+          </div>
         </div>
       </footer>
     </div>

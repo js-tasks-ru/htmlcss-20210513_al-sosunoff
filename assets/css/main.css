@@ -18,6 +18,8 @@
   --grey-3: #acb5bd;
   --grey-4: #495057;
 
+  --main-background: #f9fafc;
+
   --error: var(--red);
   --success: var(--blue);
 
