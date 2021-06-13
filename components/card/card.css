@@ -32,6 +32,7 @@
   text-align: center;
   color: var(--black);
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .card__description {
