@@ -1,4 +1,9 @@
-/* Стилизация аккордеона */
+/* accordion preview */
+.accordion-preview .accordion__item {
+  padding: 7px 20px;
+}
+
+/* accordion */
 .accordion {
 }
 
