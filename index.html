@@ -29,6 +29,8 @@
 
     <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css" />
     <link rel="stylesheet" href="./07-lection5/02-radio/radio.css" />
+    <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="./07-lection5/04-input/input.css" />
     <style></style>
   </head>
   <body>
@@ -568,7 +570,12 @@
                   </label>
 
                   <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" value="" checked />
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      value=""
+                      checked
+                    />
                     <div class="checkbox__state">
                       <div class="checkbox__control">
                         <svg
@@ -669,6 +676,119 @@
                 <div class="card__description">Element</div>
               </div>
               <!-- Radio -->
+
+              <!-- Toggler -->
+              <div class="card">
+                <div class="card__content">
+                  <label class="toggler">
+                    <input class="toggler__input" type="checkbox" value="" />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Default</div>
+                    </div>
+                  </label>
+
+                  <label class="toggler">
+                    <input
+                      class="toggler__input"
+                      type="checkbox"
+                      value=""
+                      checked
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Default</div>
+                    </div>
+                  </label>
+
+                  <label class="toggler">
+                    <input
+                      class="toggler__input"
+                      type="checkbox"
+                      value=""
+                      disabled
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Default</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Toggler</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Toggler -->
+
+              <!-- Input -->
+              <div class="card">
+                <div class="card__content">
+                  <label class="form-input form-input-preview">
+                    <div class="form-input__title">Disabled</div>
+
+                    <div class="input input-preview">
+                      <input
+                        class="input__field"
+                        type="text"
+                        value="Disabled"
+                        disabled
+                      />
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input-preview">
+                    <div class="form-input__title">Success</div>
+
+                    <div class="input input-preview">
+                      <input class="input__field" type="text" value="Success" />
+
+                      <svg
+                        class="input__icon input__icon_success"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use
+                          xlink:href="../../assets/svg-sprite.svg#success"
+                        ></use>
+                      </svg>
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input-preview">
+                    <div class="form-input__title">Focus</div>
+
+                    <div class="input input-preview">
+                      <input
+                        class="input__field input__field_focus"
+                        type="text"
+                        value="Focus"
+                      />
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input-preview">
+                    <div class="form-input__title">Error</div>
+
+                    <div class="input input-preview">
+                      <input
+                        class="input__field input__field_error"
+                        type="text"
+                        value="Error"
+                      />
+
+                      <svg
+                        class="input__icon input__icon_error"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use
+                          xlink:href="../../assets/svg-sprite.svg#error"
+                        ></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Input</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Input -->
             </div>
           </div>
         </div>
