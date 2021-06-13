@@ -14,12 +14,21 @@
   cursor: pointer;
 }
 
+.button_preview {
+  pointer-events: none;
+  width: 100%;
+}
+
 /* primary */
 .button_primary {
   background: var(--primary);
 }
 
 .button_primary:hover {
+  background: var(--primary-hover);
+}
+
+.button_primary-hover {
   background: var(--primary-hover);
 }
 
@@ -42,6 +51,10 @@
   background: var(--secondary-hover);
 }
 
+.button_secondary-hover {
+  background: var(--secondary-hover);
+}
+
 .button_secondary:active {
   background: var(--secondary-active);
 }
@@ -59,6 +72,11 @@
 }
 
 .button_alternate:hover {
+  color: var(--serovato-blue);
+  border: 1px solid var(--alternate-hover);
+}
+
+.button_alternate-hover {
   color: var(--serovato-blue);
   border: 1px solid var(--alternate-hover);
 }
