@@ -30,6 +30,7 @@
 }
 
 .input_preview .input__field {
+  pointer-events: none;
   padding: 10px 10px;
   height: auto;
   width: 100%;
