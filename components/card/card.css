@@ -19,10 +19,6 @@
   gap: 5px;
 }
 
-.card__content_display-block {
-  display: block;
-}
-
 .card__title {
   font-family: Roboto;
   font-style: normal;
