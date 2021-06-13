@@ -2,6 +2,10 @@
   display: inline-block;
 }
 
+.toggler_preview {
+  pointer-events: none;
+}
+
 .toggler__state {
   display: flex;
   gap: 12px;
