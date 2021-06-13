@@ -1,3 +1,20 @@
+/* Calendar preview */
+.calendar-preview {
+  padding: 10px 20px !important;
+}
+
+.calendar-preview .calendar__title {
+  margin-bottom: 15px;
+  line-height: 10px;
+  font-size: 13px;
+}
+
+.calendar-preview .calendar__wrapper {
+  padding-bottom: 64%;
+}
+
+/* Calendar */
+
 .calendar {
   padding: 28px 26px;
   background: #ffffff;
