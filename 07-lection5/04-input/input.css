@@ -1,8 +1,14 @@
+/* form-input preview */
+.form-input-preview {
+  width: 100%;
+}
+
 .form-input-preview .form-input__title {
   font-size: 10px;
   line-height: 10px;
 }
 
+/* form-input */
 .form-input {
   display: inline-flex;
   flex-direction: column;
@@ -20,15 +26,16 @@
   color: var(--grey-3);
 }
 
-/*  */
+/* input preview */
 .input-preview .input__field {
   padding: 10px 10px;
   height: auto;
-  width: auto;
+  width: 100%;
   font-size: 100%;
   line-height: 20px;
 }
 
+/* input */
 .input {
   position: relative;
 }
