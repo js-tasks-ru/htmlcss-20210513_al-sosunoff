@@ -9,6 +9,10 @@
   gap: 24px;
 }
 
+.skeleton_preview {
+  width: 100%;
+}
+
 .skeleton__info-top {
   display: flex;
   flex-direction: row;
