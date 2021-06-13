@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
 
     <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css" />
+
+    <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css" />
+    <link rel="stylesheet" href="./07-lection5/02-radio/radio.css" />
     <style></style>
   </head>
   <body>
@@ -498,7 +501,7 @@
               </div>
               <!-- Skeleton -->
 
-              <!-- Buttin -->
+              <!-- Button primary -->
               <div class="card">
                 <div class="card__content">
                   <button class="column__item button button_primary">
@@ -507,14 +510,30 @@
                   <button class="column__item button button_primary" disabled>
                     Primary
                   </button>
+                </div>
+                <div class="card__title">Button primary</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Button primary -->
 
+              <!-- Button secondary -->
+              <div class="card">
+                <div class="card__content">
                   <button class="column__item button button_secondary">
                     Secondary
                   </button>
                   <button class="column__item button button_secondary" disabled>
                     Secondary
                   </button>
+                </div>
+                <div class="card__title">Button secondary</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Button secondary -->
 
+              <!-- Button alternate -->
+              <div class="card">
+                <div class="card__content">
                   <button class="column__item button button_alternate">
                     Alternate
                   </button>
@@ -522,10 +541,134 @@
                     Alternate
                   </button>
                 </div>
-                <div class="card__title">Buttons</div>
+                <div class="card__title">Button alternate</div>
                 <div class="card__description">Element</div>
               </div>
-              <!-- Buttin -->
+              <!-- Button alternate -->
+
+              <!-- Checkbox -->
+              <div class="card">
+                <div class="card__content">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" value="" />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use
+                            xlink:href="../../assets/svg-sprite.svg#check"
+                          ></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Default</div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" value="" checked />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use
+                            xlink:href="../../assets/svg-sprite.svg#check"
+                          ></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Default</div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      value=""
+                      disabled
+                    />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use
+                            xlink:href="../../assets/svg-sprite.svg#check"
+                          ></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Default</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Checkbox</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Checkbox -->
+
+              <!-- Radio -->
+              <div class="card">
+                <div class="card__content">
+                  <label class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      name="1"
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Default</div>
+                    </div>
+                  </label>
+
+                  <label class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      name="1"
+                      checked
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Default</div>
+                    </div>
+                  </label>
+
+                  <label class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      disabled
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Default</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Radio</div>
+                <div class="card__description">Element</div>
+              </div>
+              <!-- Radio -->
             </div>
           </div>
         </div>
