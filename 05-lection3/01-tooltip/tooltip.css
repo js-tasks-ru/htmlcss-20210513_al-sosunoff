@@ -1,15 +1,13 @@
-/* Tooltip preview */
-.tooltip-preview .tooltip__helper {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(calc(-50% - 19px));
-}
-
-/* Tooltip */
 .tooltip {
   position: relative;
   display: inline-flex;
   justify-content: center;
+}
+
+.tooltip_preview .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(-50% - 19px));
 }
 
 .tooltip__trigger {
