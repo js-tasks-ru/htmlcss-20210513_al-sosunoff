@@ -80,3 +80,33 @@
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
   text-decoration: underline;
 }
+
+/* animate */
+
+.checkbox__input:not(:disabled):checked ~ .checkbox__state .checkbox__control {
+  animation: 0.3s checked_on;
+}
+
+.checkbox__input:not(:checked):not(:disabled) ~ .checkbox__state .checkbox__control {
+  animation: 0.3s checked_off;
+}
+
+@keyframes checked_on {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--blue);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 10px transparent;
+  }
+}
+
+@keyframes checked_off {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--blue);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 10px transparent;
+  }
+}
