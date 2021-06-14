@@ -81,3 +81,19 @@
 .radio__input:focus ~ .radio__state .radio__title {
   text-decoration: underline;
 }
+
+/* animate */
+
+.radio__input:checked ~ .radio__state .radio__control {
+  animation: 0.3s checked;
+}
+
+@keyframes checked {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--blue);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 10px transparent;
+  }
+}
