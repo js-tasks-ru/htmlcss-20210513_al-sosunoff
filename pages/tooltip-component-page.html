@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<!-- Cтраница компонента -->
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../components/page/page.css" />
     <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/menu/menu.css" />
     <link rel="stylesheet" href="../components/main/main.css" />
+    <link rel="stylesheet" href="../components/card/card.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../components/logo/logo.css" />
+    <link rel="stylesheet" href="../components/tabs/tabs.css" />
+
     <link
       rel="stylesheet"
       href="../components/component-layout/component-layout.css"
@@ -15,55 +22,21 @@
       href="../components/component-menu/component-menu.css"
     />
     <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
-    <link rel="stylesheet" href="../components/footer/footer.css" />
-    <style></style>
     <link
       rel="stylesheet"
       href="../components/component-view/component-view.css"
     />
-    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css" />
+    <!-- css component -->
+    <link rel="stylesheet" href="../05-lection3/01-tooltip/tooltip.css" />
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header header_border-bottom">
         <div class="page__box">
           <div class="header__top">
-            <div class="logo">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="30" height="30" fill="#212429" />
-              </svg>
-
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="32" height="32" rx="16" fill="#212429" />
-              </svg>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0L32 32H0V0Z" fill="#212429" />
-              </svg>
-            </div>
-
-            <!-- <div class="menu">
-              <div class="menu__item menu__item_active">Components</div>
-              <div class="menu__item">About</div>
-              <div class="menu__item">Contact</div>
-            </div> -->
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="../components/logo/logo.svg#logo"></use>
+            </svg>
           </div>
         </div>
 
@@ -73,78 +46,228 @@
       </header>
 
       <main class="main">
-        <div class="page__box component-layout">
-          <div class="sidebar">
-            <div class="component-menu">
-              <div class="component-menu__title">Elements</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link component-menu__link_active">
-                Avatar
+        <div class="page__box">
+          <div class="component-layout">
+            <div class="sidebar">
+              <div class="component-menu">
+                <div class="component-menu__title">Elements</div>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/histogram-component-page.html"
+                  >Histogram</a
+                >
+                <a
+                  class="component-menu__link"
+                  href="./../pages/avatar-component-page.html"
+                >
+                  Avatar
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/skeleton-component-page.html"
+                >
+                  Skeleton
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/button-primary-component-page.html"
+                >
+                  Button primary
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/button-secondary-component-page.html"
+                >
+                  Button secondary
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/button-alternate-component-page.html"
+                >
+                  Button alternate
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/checkbox-component-page.html"
+                >
+                  Checkbox
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/radio-component-page.html"
+                >
+                  Radio
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/toogler-component-page.html"
+                >
+                  Toggler
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/input-component-page.html"
+                >
+                  Input
+                </a>
               </div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
+
+              <div class="component-menu">
+                <div class="component-menu__title">Containers</div>
+                <a
+                  class="component-menu__link component-menu__link_active"
+                  href="./../pages/tooltip-component-page.html"
+                >
+                  Tooltip
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/calendar-component-page.html"
+                >
+                  Calendar
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/accordion-component-page.html"
+                >
+                  Accordion
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/modal-component-page.html"
+                >
+                  Modal
+                </a>
+              </div>
             </div>
 
-            <div class="component-menu">
-              <div class="component-menu__title">Elements</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-            </div>
+            <div class="component-view">
+              <div class="component-view__title">Tooltip</div>
 
-            <div class="component-menu">
-              <div class="component-menu__title">Elements</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-              <div class="component-menu__link">Avatar</div>
-            </div>
-          </div>
+              <div class="component-view__component">
+                <!-- Tooltip -->
+                <div class="tooltip">
+                  <svg
+                    class="tooltip__trigger"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="../assets/svg-sprite.svg#help"></use>
+                  </svg>
 
-          <div class="component-view">
-            <div class="component-view__title">Histogram</div>
-
-            <div class="component-view__component">
-              <div class="histogram">
-                <div class="histogram__header">
-                  <div class="histogram__title">Total orders</div>
-                  <div class="histogram__link">View all</div>
+                  <div class="tooltip__helper">Helper Text</div>
                 </div>
+                <!-- Tooltip -->
+              </div>
 
-                <div class="histogram__number">50254</div>
+              <div class="component-view__code">
+                <div class="tabs">
+                  <input
+                    class="tabs__trigger"
+                    type="radio"
+                    id="html"
+                    name="tabs"
+                    checked
+                  />
+                  <input
+                    class="tabs__trigger"
+                    type="radio"
+                    id="css"
+                    name="tabs"
+                  />
 
-                <div class="chart">
-                  <div class="chart__column"></div>
-                  <div class="chart__column" style="--percent: 30"></div>
-                  <div class="chart__column" style="--percent: 20"></div>
-                  <div class="chart__column" style="--percent: 60"></div>
-                  <div class="chart__column" style="--percent: 60"></div>
-                  <div class="chart__column" style="--percent: 100"></div>
-                  <div class="chart__column" style="--percent: 100"></div>
-                  <div class="chart__column" style="--percent: 30"></div>
-                  <div class="chart__column" style="--percent: 20"></div>
-                  <div class="chart__column" style="--percent: 95"></div>
-                  <div class="chart__column" style="--percent: 25"></div>
-                  <div class="chart__column" style="--percent: 35"></div>
-                  <div class="chart__column" style="--percent: 20"></div>
-                  <div class="chart__column" style="--percent: 30"></div>
-                  <div class="chart__column" style="--percent: 20"></div>
-                  <div class="chart__column" style="--percent: 60"></div>
-                  <div class="chart__column" style="--percent: 100"></div>
-                  <div class="chart__column" style="--percent: 95"></div>
-                  <div class="chart__column" style="--percent: 60"></div>
-                  <div class="chart__column" style="--percent: 30"></div>
-                  <div class="chart__column" style="--percent: 20"></div>
-                  <div class="chart__column" style="--percent: 60"></div>
-                  <div class="chart__column" style="--percent: 100"></div>
-                  <div class="chart__column" style="--percent: 25"></div>
+                  <div
+                    class="tabs__menu"
+                    style="--tabs__menu_padding: 0 0 0 48px"
+                  >
+                    <div class="tabs__scroller">
+                      <label class="tabs__label" for="html">HTML</label>
+                      <label class="tabs__label" for="css">CSS</label>
+                    </div>
+                  </div>
+
+                  <div class="tabs__content tabs__content_html">
+                    <pre>
+                      <code>
+&lt;div class="tooltip"&gt;
+  &lt;svg
+    class="tooltip__trigger"
+    xmlns="http://www.w3.org/2000/svg"
+  &gt;
+    &lt;use xlink:href="../assets/svg-sprite.svg#help"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+
+  &lt;div class="tooltip__helper"&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;
+                      </code>
+                    </pre>
+                  </div>
+
+                  <div class="tabs__content tabs__content_css">
+                    <pre>
+                      <code>
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.tooltip_preview .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(-50% - 19px));
+}
+
+.tooltip__trigger {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+  z-index: 1;
+  position: relative;
+}
+
+.tooltip__trigger:hover ~ .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(-50% - 19px));
+}
+
+.tooltip__helper {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--grey-2);
+  transition: 0.1s all linear;
+
+  background: var(--blue);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  padding: 13px 21px 8px;
+
+  width: 130px;
+
+  top: -100%;
+  transform: translateY(calc(-50% - 0px));
+}
+
+.tooltip__helper::before {
+  content: '';
+  border: 14px solid transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 100%;
+  border-top: 6px solid var(--blue);
+}
+                        
+                      </code>
+                    </pre>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,7 +277,7 @@
 
       <footer class="footer">
         <div class="page__box">
-          <p class="footer__title">Reusable component library</p>
+          <div class="footer__description">Reusable component library</div>
         </div>
       </footer>
     </div>

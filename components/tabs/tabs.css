@@ -14,6 +14,7 @@
 .tabs__menu {
   border-bottom: 1px solid var(--grey-2);
   background-color: var(--white);
+  padding: var(--tabs__menu_padding, 0);
 }
 
 .tabs__scroller {
@@ -68,7 +69,10 @@
 #container-tab:checked ~ .tabs__content_container {
   display: block;
 }
-#container-tab:checked ~ .tabs__menu .tabs__scroller [for='container-tab']::before {
+#container-tab:checked
+  ~ .tabs__menu
+  .tabs__scroller
+  [for='container-tab']::before {
   visibility: visible;
 }
 
@@ -80,5 +84,27 @@
   display: block;
 }
 #element-tab:checked ~ .tabs__menu .tabs__scroller [for='element-tab']::before {
+  visibility: visible;
+}
+
+/* html */
+#html:checked ~ .tabs__menu .tabs__scroller [for='html'] {
+  color: var(--black);
+}
+#html:checked ~ .tabs__content_html {
+  display: block;
+}
+#html:checked ~ .tabs__menu .tabs__scroller [for='html']::before {
+  visibility: visible;
+}
+
+/* css */
+#css:checked ~ .tabs__menu .tabs__scroller [for='css'] {
+  color: var(--black);
+}
+#css:checked ~ .tabs__content_css {
+  display: block;
+}
+#css:checked ~ .tabs__menu .tabs__scroller [for='css']::before {
   visibility: visible;
 }
