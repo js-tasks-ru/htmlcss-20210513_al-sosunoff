@@ -58,8 +58,21 @@
   height: calc(100px * var(--percent, 0) / 100);
   flex: 1;
   transition: 0.2s linear;
+  animation: 0.8s loading;
 }
 
 .chart__column:hover {
   opacity: 0.5;
+}
+
+@keyframes loading {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
 }
