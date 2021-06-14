@@ -15,7 +15,7 @@
 }
 
 .component-view__component {
-  height: 275px;
+  min-height: 275px;
   display: flex;
   align-items: center;
   justify-content: center;
