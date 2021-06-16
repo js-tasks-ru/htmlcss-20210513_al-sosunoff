@@ -27,6 +27,12 @@
   justify-content: center;
 }
 
+.component-view__component_direction-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .component-view__code {
   min-height: 436px;
 }
