@@ -15,11 +15,16 @@
 }
 
 .component-view__component {
+  position: relative;
   min-height: 275px;
+  display: block;
+  padding: 0px 48px;
+}
+
+.component-view__component_center {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .component-view__code {
