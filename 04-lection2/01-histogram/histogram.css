@@ -5,6 +5,7 @@
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+  flex-basis: var(--histogram_flex-basis, auto);
 }
 
 .histogram_preview {
@@ -73,6 +74,6 @@
 
   100% {
     transform: scaleY(1);
-    transform-origin: bottom;
+    transform-origin: bottom center;
   }
 }
