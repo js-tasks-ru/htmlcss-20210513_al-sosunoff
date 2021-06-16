@@ -1,4 +1,7 @@
 .component-view {
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
 }
 
 .component-view__title {
@@ -12,6 +15,26 @@
 }
 
 .component-view__component {
+  position: relative;
+  min-height: 275px;
+  display: block;
+  padding: 0px 48px;
+}
+
+.component-view__component_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component-view__component_direction-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.component-view__code {
+  min-height: 436px;
 }
 
 @media screen and (max-width: 375px) {

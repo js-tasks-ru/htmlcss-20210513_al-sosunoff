@@ -27,7 +27,7 @@
       href="../components/component-view/component-view.css"
     />
     <!-- css component -->
-    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css" />
+    <link rel="stylesheet" href="../05-lection3/01-tooltip/tooltip.css" />
   </head>
   <body>
     <div class="page">
@@ -54,7 +54,7 @@
               <div class="component-menu">
                 <div class="component-menu__title">Elements</div>
                 <a
-                  class="component-menu__link component-menu__link_active"
+                  class="component-menu__link"
                   href="./../pages/histogram-component-page.html"
                   >Histogram</a
                 >
@@ -117,7 +117,7 @@
               <div class="component-menu">
                 <div class="component-menu__title">Containers</div>
                 <a
-                  class="component-menu__link"
+                  class="component-menu__link component-menu__link_active"
                   href="./../pages/tooltip-component-page.html"
                 >
                   Tooltip
@@ -144,46 +144,25 @@
             </div>
 
             <div class="component-view">
-              <div class="component-view__title">Histogram</div>
+              <div class="component-view__title">Tooltip</div>
 
-              <div class="component-view__component">
-                <!-- Histogram -->
-                <div class="histogram">
-                  <div class="histogram__header">
-                    <div class="histogram__title">Total orders</div>
-                    <div class="histogram__link">View all</div>
-                  </div>
+              <div
+                class="
+                  component-view__component component-view__component_center
+                "
+              >
+                <!-- Tooltip -->
+                <div class="tooltip">
+                  <svg
+                    class="tooltip__trigger"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="../assets/svg-sprite.svg#help"></use>
+                  </svg>
 
-                  <div class="histogram__number">50254</div>
-
-                  <div class="chart">
-                    <div class="chart__column"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
-                    <div class="chart__column" style="--percent: 35"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
-                  </div>
+                  <div class="tooltip__helper">Helper Text</div>
                 </div>
-                <!-- Histogram -->
+                <!-- Tooltip -->
               </div>
 
               <div class="component-view__code">
@@ -215,6 +194,16 @@
                   <div class="tabs__content tabs__content_html">
                     <pre>
                       <code>
+&lt;div class="tooltip"&gt;
+  &lt;svg
+    class="tooltip__trigger"
+    xmlns="http://www.w3.org/2000/svg"
+  &gt;
+    &lt;use xlink:href="../assets/svg-sprite.svg#help"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+
+  &lt;div class="tooltip__helper"&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;
                       </code>
                     </pre>
                   </div>
@@ -222,6 +211,66 @@
                   <div class="tabs__content tabs__content_css">
                     <pre>
                       <code>
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.tooltip_preview .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(-50% - 19px));
+}
+
+.tooltip__trigger {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+  z-index: 1;
+  position: relative;
+}
+
+.tooltip__trigger:hover ~ .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(-50% - 19px));
+}
+
+.tooltip__helper {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--grey-2);
+  transition: 0.1s all linear;
+
+  background: var(--blue);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  padding: 13px 21px 8px;
+
+  width: 130px;
+
+  top: -100%;
+  transform: translateY(calc(-50% - 0px));
+}
+
+.tooltip__helper::before {
+  content: '';
+  border: 14px solid transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 100%;
+  border-top: 6px solid var(--blue);
+}
+                        
                       </code>
                     </pre>
                   </div>

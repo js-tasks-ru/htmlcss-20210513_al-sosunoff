@@ -27,7 +27,7 @@
       href="../components/component-view/component-view.css"
     />
     <!-- css component -->
-    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css" />
+    <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css" />
   </head>
   <body>
     <div class="page">
@@ -54,7 +54,7 @@
               <div class="component-menu">
                 <div class="component-menu__title">Elements</div>
                 <a
-                  class="component-menu__link component-menu__link_active"
+                  class="component-menu__link"
                   href="./../pages/histogram-component-page.html"
                   >Histogram</a
                 >
@@ -123,7 +123,7 @@
                   Tooltip
                 </a>
                 <a
-                  class="component-menu__link"
+                  class="component-menu__link component-menu__link_active"
                   href="./../pages/calendar-component-page.html"
                 >
                   Calendar
@@ -144,46 +144,85 @@
             </div>
 
             <div class="component-view">
-              <div class="component-view__title">Histogram</div>
+              <div class="component-view__title">Calendar</div>
 
-              <div class="component-view__component">
-                <!-- Histogram -->
-                <div class="histogram">
-                  <div class="histogram__header">
-                    <div class="histogram__title">Total orders</div>
-                    <div class="histogram__link">View all</div>
-                  </div>
+              <div
+                class="
+                  component-view__component component-view__component_center
+                "
+              >
+                <!-- Calendar -->
+                <div class="calendar">
+                  <div class="calendar__title">Январь 2021</div>
 
-                  <div class="histogram__number">50254</div>
-
-                  <div class="chart">
-                    <div class="chart__column"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
-                    <div class="chart__column" style="--percent: 35"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
+                  <div class="calendar__wrapper">
+                    <div class="calendar__inner">
+                      <div class="calendar__item calendar__item_day">Пн</div>
+                      <div class="calendar__item calendar__item_day">Вт</div>
+                      <div class="calendar__item calendar__item_day">Ср</div>
+                      <div class="calendar__item calendar__item_day">Чт</div>
+                      <div class="calendar__item calendar__item_day">Пт</div>
+                      <div class="calendar__item calendar__item_day">Сб</div>
+                      <div class="calendar__item calendar__item_day">Вс</div>
+                      <div class="calendar__item" style="--start-day: 5">1</div>
+                      <div class="calendar__item">2</div>
+                      <div class="calendar__item">3</div>
+                      <div class="calendar__item">4</div>
+                      <div class="calendar__item">5</div>
+                      <div class="calendar__item">6</div>
+                      <div class="calendar__item">7</div>
+                      <div class="calendar__item">8</div>
+                      <div class="calendar__item calendar__item_range-start">
+                        9
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        10
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        11
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        12
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        13
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        14
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        15
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        16
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        17
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        18
+                      </div>
+                      <div class="calendar__item calendar__item_between">
+                        19
+                      </div>
+                      <div class="calendar__item calendar__item_range-end">
+                        20
+                      </div>
+                      <div class="calendar__item">21</div>
+                      <div class="calendar__item">22</div>
+                      <div class="calendar__item">23</div>
+                      <div class="calendar__item">24</div>
+                      <div class="calendar__item">25</div>
+                      <div class="calendar__item">26</div>
+                      <div class="calendar__item">27</div>
+                      <div class="calendar__item">28</div>
+                      <div class="calendar__item">29</div>
+                      <div class="calendar__item">30</div>
+                      <div class="calendar__item">31</div>
+                    </div>
                   </div>
                 </div>
-                <!-- Histogram -->
+                <!-- Calendar -->
               </div>
 
               <div class="component-view__code">

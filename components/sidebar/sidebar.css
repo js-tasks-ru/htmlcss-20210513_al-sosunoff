@@ -1,6 +1,7 @@
 .sidebar {
-  display: grid;
+  display: flex;
   gap: 32px;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 375px) {

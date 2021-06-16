@@ -1,4 +1,6 @@
 .component-menu {
+  display: flex;
+  flex-direction: column;
 }
 
 .component-menu__title {
@@ -8,7 +10,7 @@
   font-size: 20px;
   line-height: 26px;
   color: var(--black);
-  margin: 16px 0px;
+  margin: 0px 0px 16px 0px;
 }
 
 .component-menu__link {
@@ -19,9 +21,15 @@
   line-height: 22px;
   color: var(--black);
   margin: 4px 0px;
+  transition: color 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.component-menu__link:hover {
+  color: var(--red);
 }
 
 .component-menu__link_active {
-  color: #d84910;
+  color: var(--red);
   margin: 4px 0px;
 }

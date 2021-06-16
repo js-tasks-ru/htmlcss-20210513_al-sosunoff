@@ -27,7 +27,7 @@
       href="../components/component-view/component-view.css"
     />
     <!-- css component -->
-    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css" />
+    <link rel="stylesheet" href="../07-lection5/02-radio/radio.css" />
   </head>
   <body>
     <div class="page">
@@ -54,7 +54,7 @@
               <div class="component-menu">
                 <div class="component-menu__title">Elements</div>
                 <a
-                  class="component-menu__link component-menu__link_active"
+                  class="component-menu__link"
                   href="./../pages/histogram-component-page.html"
                   >Histogram</a
                 >
@@ -95,7 +95,7 @@
                   Checkbox
                 </a>
                 <a
-                  class="component-menu__link"
+                  class="component-menu__link component-menu__link_active"
                   href="./../pages/radio-component-page.html"
                 >
                   Radio
@@ -144,46 +144,55 @@
             </div>
 
             <div class="component-view">
-              <div class="component-view__title">Histogram</div>
+              <div class="component-view__title">Radio</div>
 
-              <div class="component-view__component">
-                <!-- Histogram -->
-                <div class="histogram">
-                  <div class="histogram__header">
-                    <div class="histogram__title">Total orders</div>
-                    <div class="histogram__link">View all</div>
+              <div
+                class="
+                  component-view__component
+                  component-view__component_center
+                  component-view__component_direction-column
+                "
+              >
+                <!-- Radio -->
+                <label class="radio">
+                  <input class="radio__input" type="radio" value="" name="1" />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+
+                    <div class="radio__title">Radio</div>
                   </div>
+                </label>
 
-                  <div class="histogram__number">50254</div>
+                <label class="radio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    value=""
+                    name="1"
+                    checked
+                  />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
 
-                  <div class="chart">
-                    <div class="chart__column"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
-                    <div class="chart__column" style="--percent: 35"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
+                    <div class="radio__title">Radio</div>
                   </div>
-                </div>
-                <!-- Histogram -->
+                </label>
+
+                <label class="radio">
+                  <input class="radio__input" type="radio" value="" disabled />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+
+                    <div class="radio__title">Radio</div>
+                  </div>
+                </label>
+                <!-- Radio -->
               </div>
 
               <div class="component-view__code">

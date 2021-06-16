@@ -1,10 +1,19 @@
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.modal_preview {
+  display: block;
+}
+
+.modal_preview .modal__item {
+  width: 90%;
+  padding: 20px 20px;
 }
 
 .modal__backdrop {

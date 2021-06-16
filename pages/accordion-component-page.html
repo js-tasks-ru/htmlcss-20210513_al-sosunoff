@@ -27,7 +27,7 @@
       href="../components/component-view/component-view.css"
     />
     <!-- css component -->
-    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css" />
+    <link rel="stylesheet" href="../03-lection1/02-accordion/accordion.css" />
   </head>
   <body>
     <div class="page">
@@ -54,7 +54,7 @@
               <div class="component-menu">
                 <div class="component-menu__title">Elements</div>
                 <a
-                  class="component-menu__link component-menu__link_active"
+                  class="component-menu__link"
                   href="./../pages/histogram-component-page.html"
                   >Histogram</a
                 >
@@ -129,7 +129,7 @@
                   Calendar
                 </a>
                 <a
-                  class="component-menu__link"
+                  class="component-menu__link component-menu__link_active"
                   href="./../pages/accordion-component-page.html"
                 >
                   Accordion
@@ -144,46 +144,69 @@
             </div>
 
             <div class="component-view">
-              <div class="component-view__title">Histogram</div>
+              <div class="component-view__title">Accordion</div>
 
               <div class="component-view__component">
-                <!-- Histogram -->
-                <div class="histogram">
-                  <div class="histogram__header">
-                    <div class="histogram__title">Total orders</div>
-                    <div class="histogram__link">View all</div>
-                  </div>
+                <!-- Accordion -->
+                <div class="accordion">
+                  <details class="accordion__item" open>
+                    <summary class="accordion__summary">
+                      Accordion item 1
 
-                  <div class="histogram__number">50254</div>
+                      <svg
+                        class="accordion__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use
+                          xlink:href="./../assets/svg-sprite.svg#arrow"
+                        ></use>
+                      </svg>
+                    </summary>
+                    <p class="accordion__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint.
+                    </p>
+                  </details>
 
-                  <div class="chart">
-                    <div class="chart__column"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
-                    <div class="chart__column" style="--percent: 35"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 95"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 30"></div>
-                    <div class="chart__column" style="--percent: 20"></div>
-                    <div class="chart__column" style="--percent: 60"></div>
-                    <div class="chart__column" style="--percent: 100"></div>
-                    <div class="chart__column" style="--percent: 25"></div>
-                  </div>
+                  <details class="accordion__item">
+                    <summary class="accordion__summary">
+                      Accordion item 2
+
+                      <svg
+                        class="accordion__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use
+                          xlink:href="./../assets/svg-sprite.svg#arrow"
+                        ></use>
+                      </svg>
+                    </summary>
+                    <p class="accordion__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint.
+                    </p>
+                  </details>
+
+                  <details class="accordion__item">
+                    <summary class="accordion__summary">
+                      Accordion item 3
+
+                      <svg
+                        class="accordion__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use
+                          xlink:href="./../assets/svg-sprite.svg#arrow"
+                        ></use>
+                      </svg>
+                    </summary>
+                    <p class="accordion__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint.
+                    </p>
+                  </details>
                 </div>
-                <!-- Histogram -->
+                <!-- Accordion -->
               </div>
 
               <div class="component-view__code">

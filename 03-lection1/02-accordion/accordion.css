@@ -1,5 +1,12 @@
-/* Стилизация аккордеона */
 .accordion {
+}
+
+.accordion_preview {
+}
+
+.accordion_preview .accordion__item {
+  padding: 7px 20px;
+  pointer-events: none;
 }
 
 .accordion__item {

@@ -3,12 +3,11 @@
   grid-template-columns: 229px 1fr;
   height: 100%;
   gap: 56px;
+  padding: 25px 0px;
 }
 
 @media screen and (max-width: 375px) {
   .component-layout {
     grid-template-columns: 1fr;
-    /* height: 100%; */
-    /* gap: 56px; */
   }
 }

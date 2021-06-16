@@ -4,6 +4,10 @@
   background-color: var(--white);
 }
 
+.header_border-bottom {
+  border-bottom: 1px solid var(--grey-2);
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;

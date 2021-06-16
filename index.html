@@ -14,12 +14,23 @@
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <link rel="stylesheet" href="./components/logo/logo.css" />
     <link rel="stylesheet" href="./components/tabs/tabs.css" />
-    <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css" />
-    <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
+
+    <link rel="stylesheet" href="./03-lection1/01-button/button.css" />
+    <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css" />
+
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css" />
     <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css" />
+
+    <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css" />
+    <link rel="stylesheet" href="./05-lection3/02-modal/modal.css" />
+    <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
+
     <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css" />
-    <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css" />
+
+    <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css" />
+    <link rel="stylesheet" href="./07-lection5/02-radio/radio.css" />
+    <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="./07-lection5/04-input/input.css" />
     <style></style>
   </head>
   <body>
@@ -165,7 +176,6 @@
       </header>
 
       <main class="main">
-        <!-- <div class="page__box cards"></div> -->
         <div class="tabs">
           <input
             class="tabs__trigger"
@@ -196,20 +206,16 @@
           </div>
 
           <div class="tabs__content tabs__content_all">
-            <div class="page__box">all</div>
-          </div>
-
-          <div class="tabs__content tabs__content_container">
             <div class="page__box cards">
               <!-- Tooltip -->
-              <div class="card">
+              <a class="card" href="./pages/tooltip-component-page.html">
                 <div class="card__content">
-                  <div class="tooltip">
+                  <div class="tooltip tooltip_preview">
                     <svg
                       class="tooltip__trigger"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use xlink:href="../../assets/svg-sprite.svg#help"></use>
+                      <use xlink:href="./assets/svg-sprite.svg#help"></use>
                     </svg>
 
                     <div class="tooltip__helper">Helper Text</div>
@@ -217,13 +223,13 @@
                 </div>
                 <div class="card__title">Tooltip</div>
                 <div class="card__description">Container</div>
-              </div>
+              </a>
               <!-- Tooltip -->
 
               <!-- Calendar -->
-              <div class="card">
-                <div class="card__content card__content_display-block">
-                  <div class="calendar">
+              <a class="card" href="./pages/calendar-component-page.html">
+                <div class="card__content">
+                  <div class="calendar calendar_preview">
                     <div class="calendar__title">Январь 2021</div>
 
                     <div class="calendar__wrapper">
@@ -298,14 +304,14 @@
                 </div>
                 <div class="card__title">Calendar</div>
                 <div class="card__description">Container</div>
-              </div>
+              </a>
               <!-- Calendar -->
 
               <!-- Accordion -->
-              <div class="card">
-                <div class="card__content card__content_display-block">
-                  <div class="accordion">
-                    <details class="accordion__item">
+              <a class="card" href="./pages/accordion-component-page.html">
+                <div class="card__content">
+                  <div class="accordion accordion_preview">
+                    <details class="accordion__item" open>
                       <summary class="accordion__summary">
                         Accordion item 1
 
@@ -313,9 +319,7 @@
                           class="accordion__icon"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            xlink:href="../../assets/svg-sprite.svg#arrow"
-                          ></use>
+                          <use xlink:href="./assets/svg-sprite.svg#arrow"></use>
                         </svg>
                       </summary>
                       <p class="accordion__text">
@@ -332,9 +336,7 @@
                           class="accordion__icon"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            xlink:href="../../assets/svg-sprite.svg#arrow"
-                          ></use>
+                          <use xlink:href="./assets/svg-sprite.svg#arrow"></use>
                         </svg>
                       </summary>
                       <p class="accordion__text">
@@ -351,9 +353,7 @@
                           class="accordion__icon"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            xlink:href="../../assets/svg-sprite.svg#arrow"
-                          ></use>
+                          <use xlink:href="./assets/svg-sprite.svg#arrow"></use>
                         </svg>
                       </summary>
                       <p class="accordion__text">
@@ -365,17 +365,44 @@
                 </div>
                 <div class="card__title">Accordion</div>
                 <div class="card__description">Element</div>
-              </div>
+              </a>
               <!-- Accordion -->
-            </div>
-          </div>
 
-          <div class="tabs__content tabs__content_element">
-            <div class="page__box cards">
+              <!-- Modal -->
+              <a class="card" href="./pages/modal-component-page.html">
+                <div class="card__content">
+                  <div class="modal modal_preview" id="modal">
+                    <div class="modal__backdrop"></div>
+
+                    <div class="modal__wrapper">
+                      <div class="modal__item">
+                        <svg
+                          class="modal__close"
+                          id="modal-close"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#close"></use>
+                        </svg>
+
+                        <div class="modal__title">Modal title</div>
+
+                        <div class="modal__content">
+                          Amet minim mollit non deserunt ullamco est sit aliqua
+                          dolor do amet sint.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Modal</div>
+                <div class="card__description">Container</div>
+              </a>
+              <!-- Modal -->
+
               <!-- Histogram -->
-              <div class="card">
-                <div class="card__content card__content_display-block">
-                  <div class="histogram">
+              <a class="card" href="./pages/histogram-component-page.html">
+                <div class="card__content">
+                  <div class="histogram histogram_preview">
                     <div class="histogram__header">
                       <div class="histogram__title">Total orders</div>
                       <div class="histogram__link">View all</div>
@@ -413,11 +440,11 @@
                 </div>
                 <div class="card__title">Histogram</div>
                 <div class="card__description">Element</div>
-              </div>
+              </a>
               <!-- Histogram -->
 
               <!-- Avatar -->
-              <div class="card">
+              <a class="card" href="./pages/avatar-component-page.html">
                 <div class="card__content">
                   <img
                     class="avatar avatar_lg"
@@ -427,13 +454,13 @@
                 </div>
                 <div class="card__title">Avatar</div>
                 <div class="card__description">Element</div>
-              </div>
+              </a>
               <!-- Avatar -->
 
               <!-- Skeleton -->
-              <div class="card">
-                <div class="card__content card__content_display-block">
-                  <div class="skeleton">
+              <a class="card" href="./pages/skeleton-component-page.html">
+                <div class="card__content">
+                  <div class="skeleton skeleton_preview">
                     <div class="skeleton__info-top">
                       <div class="skeleton__logo"></div>
 
@@ -457,8 +484,940 @@
                 </div>
                 <div class="card__title">Skeleton</div>
                 <div class="card__description">Element</div>
-              </div>
+              </a>
               <!-- Skeleton -->
+
+              <!-- Button primary -->
+              <a class="card" href="./pages/button-primary-component-page.html">
+                <div class="card__content">
+                  <button
+                    class="column__item button button_primary button_preview"
+                  >
+                    Primary default
+                  </button>
+                  <button
+                    class="
+                      column__item
+                      button button_primary button_primary-hover button_preview
+                    "
+                  >
+                    Primary hover
+                  </button>
+                  <button
+                    class="column__item button button_primary button_preview"
+                    disabled
+                  >
+                    Primary disabled
+                  </button>
+                </div>
+                <div class="card__title">Button primary</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Button primary -->
+
+              <!-- Button secondary -->
+              <a class="card" href="./pages/button-secondary-component-page.html">
+                <div class="card__content">
+                  <button
+                    class="column__item button button_secondary button_preview"
+                  >
+                    Secondary default
+                  </button>
+                  <button
+                    class="
+                      column__item
+                      button
+                      button_secondary
+                      button_preview
+                      button_secondary-hover
+                    "
+                  >
+                    Secondary hover
+                  </button>
+                  <button
+                    class="column__item button button_secondary button_preview"
+                    disabled
+                  >
+                    Secondary disabled
+                  </button>
+                </div>
+                <div class="card__title">Button secondary</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Button secondary -->
+
+              <!-- Button alternate -->
+              <a class="card" href="./pages/button-alternate-component-page.html">
+                <div class="card__content">
+                  <button
+                    class="column__item button button_alternate button_preview"
+                  >
+                    Alternate default
+                  </button>
+                  <button
+                    class="
+                      column__item
+                      button
+                      button_alternate
+                      button_preview
+                      button_alternate-hover
+                    "
+                  >
+                    Alternate hover
+                  </button>
+                  <button
+                    class="column__item button button_alternate button_preview"
+                    disabled
+                  >
+                    Alternate disabled
+                  </button>
+                </div>
+                <div class="card__title">Button alternate</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Button alternate -->
+
+              <!-- Checkbox -->
+              <a class="card" href="./pages/checkbox-component-page.html">
+                <div class="card__content">
+                  <label class="checkbox checkbox_preview">
+                    <input class="checkbox__input" type="checkbox" value="" />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#check"></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Checkbox</div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox checkbox_preview">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      value=""
+                      checked
+                    />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#check"></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Checkbox</div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox checkbox_preview">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      value=""
+                      disabled
+                    />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#check"></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Checkbox</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Checkbox</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Checkbox -->
+
+              <!-- Radio -->
+              <a class="card" href="./pages/radio-component-page.html">
+                <div class="card__content">
+                  <label class="radio radio_preview">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      name="1"
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Radio</div>
+                    </div>
+                  </label>
+
+                  <label class="radio radio_preview">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      name="1"
+                      checked
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Radio</div>
+                    </div>
+                  </label>
+
+                  <label class="radio radio_preview">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      disabled
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Radio</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Radio</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Radio -->
+
+              <!-- Toggler -->
+              <a class="card" href="./pages/toggler-component-page.html">
+                <div class="card__content">
+                  <label class="toggler toggler_preview">
+                    <input class="toggler__input" type="checkbox" value="" />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Toggler</div>
+                    </div>
+                  </label>
+
+                  <label class="toggler toggler_preview">
+                    <input
+                      class="toggler__input"
+                      type="checkbox"
+                      value=""
+                      checked
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Toggler</div>
+                    </div>
+                  </label>
+
+                  <label class="toggler toggler_preview">
+                    <input
+                      class="toggler__input"
+                      type="checkbox"
+                      value=""
+                      disabled
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Toggler</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Toggler</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Toggler -->
+
+              <!-- Input -->
+              <a class="card" href="./pages/input-component-page.html">
+                <div class="card__content">
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Disabled</div>
+
+                    <div class="input input_preview">
+                      <input
+                        class="input__field"
+                        type="text"
+                        value="Disabled"
+                        disabled
+                      />
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Success</div>
+
+                    <div class="input input_preview">
+                      <input class="input__field" type="text" value="Success" />
+
+                      <svg
+                        class="input__icon input__icon_success"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use xlink:href="./assets/svg-sprite.svg#success"></use>
+                      </svg>
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Focus</div>
+
+                    <div class="input input_preview">
+                      <input
+                        class="input__field input__field_focus"
+                        type="text"
+                        value="Focus"
+                      />
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Error</div>
+
+                    <div class="input input_preview">
+                      <input
+                        class="input__field input__field_error"
+                        type="text"
+                        value="Error"
+                      />
+
+                      <svg
+                        class="input__icon input__icon_error"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use xlink:href="./assets/svg-sprite.svg#error"></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Input</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Input -->
+            </div>
+          </div>
+
+          <div class="tabs__content tabs__content_container">
+            <div class="page__box cards">
+              <!-- Tooltip -->
+              <a class="card" href="./pages/tooltip-component-page.html">
+                <div class="card__content">
+                  <div class="tooltip tooltip_preview">
+                    <svg
+                      class="tooltip__trigger"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use xlink:href="./assets/svg-sprite.svg#help"></use>
+                    </svg>
+
+                    <div class="tooltip__helper">Helper Text</div>
+                  </div>
+                </div>
+                <div class="card__title">Tooltip</div>
+                <div class="card__description">Container</div>
+              </a>
+              <!-- Tooltip -->
+
+              <!-- Calendar -->
+              <a class="card" href="./pages/calendar-component-page.html">
+                <div class="card__content">
+                  <div class="calendar calendar_preview">
+                    <div class="calendar__title">Январь 2021</div>
+
+                    <div class="calendar__wrapper">
+                      <div class="calendar__inner">
+                        <div class="calendar__item calendar__item_day">Пн</div>
+                        <div class="calendar__item calendar__item_day">Вт</div>
+                        <div class="calendar__item calendar__item_day">Ср</div>
+                        <div class="calendar__item calendar__item_day">Чт</div>
+                        <div class="calendar__item calendar__item_day">Пт</div>
+                        <div class="calendar__item calendar__item_day">Сб</div>
+                        <div class="calendar__item calendar__item_day">Вс</div>
+                        <div class="calendar__item" style="--start-day: 5">
+                          1
+                        </div>
+                        <div class="calendar__item">2</div>
+                        <div class="calendar__item">3</div>
+                        <div class="calendar__item">4</div>
+                        <div class="calendar__item">5</div>
+                        <div class="calendar__item">6</div>
+                        <div class="calendar__item">7</div>
+                        <div class="calendar__item">8</div>
+                        <div class="calendar__item calendar__item_range-start">
+                          9
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          10
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          11
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          12
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          13
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          14
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          15
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          16
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          17
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          18
+                        </div>
+                        <div class="calendar__item calendar__item_between">
+                          19
+                        </div>
+                        <div class="calendar__item calendar__item_range-end">
+                          20
+                        </div>
+                        <div class="calendar__item">21</div>
+                        <div class="calendar__item">22</div>
+                        <div class="calendar__item">23</div>
+                        <div class="calendar__item">24</div>
+                        <div class="calendar__item">25</div>
+                        <div class="calendar__item">26</div>
+                        <div class="calendar__item">27</div>
+                        <div class="calendar__item">28</div>
+                        <div class="calendar__item">29</div>
+                        <div class="calendar__item">30</div>
+                        <div class="calendar__item">31</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Calendar</div>
+                <div class="card__description">Container</div>
+              </a>
+              <!-- Calendar -->
+
+              <!-- Accordion -->
+              <a class="card" href="./pages/accordion-component-page.html">
+                <div class="card__content">
+                  <div class="accordion accordion_preview">
+                    <details class="accordion__item" open>
+                      <summary class="accordion__summary">
+                        Accordion item 1
+
+                        <svg
+                          class="accordion__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#arrow"></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </p>
+                    </details>
+
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        Accordion item 2
+
+                        <svg
+                          class="accordion__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#arrow"></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </p>
+                    </details>
+
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        Accordion item 3
+
+                        <svg
+                          class="accordion__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#arrow"></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+                <div class="card__title">Accordion</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Accordion -->
+
+              <!-- Modal -->
+              <a class="card" href="./pages/modal-component-page.html">
+                <div class="card__content">
+                  <div class="modal modal_preview" id="modal">
+                    <div class="modal__backdrop"></div>
+
+                    <div class="modal__wrapper">
+                      <div class="modal__item">
+                        <svg
+                          class="modal__close"
+                          id="modal-close"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#close"></use>
+                        </svg>
+
+                        <div class="modal__title">Modal title</div>
+
+                        <div class="modal__content">
+                          Amet minim mollit non deserunt ullamco est sit aliqua
+                          dolor do amet sint.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Modal</div>
+                <div class="card__description">Container</div>
+              </a>
+              <!-- Modal -->
+            </div>
+          </div>
+
+          <div class="tabs__content tabs__content_element">
+            <div class="page__box cards">
+              <!-- Histogram -->
+              <a class="card" href="./pages/histogram-component-page.html">
+                <div class="card__content">
+                  <div class="histogram histogram_preview">
+                    <div class="histogram__header">
+                      <div class="histogram__title">Total orders</div>
+                      <div class="histogram__link">View all</div>
+                    </div>
+
+                    <div class="histogram__number">50254</div>
+
+                    <div class="chart">
+                      <div class="chart__column"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 95"></div>
+                      <div class="chart__column" style="--percent: 25"></div>
+                      <div class="chart__column" style="--percent: 35"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 95"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 30"></div>
+                      <div class="chart__column" style="--percent: 20"></div>
+                      <div class="chart__column" style="--percent: 60"></div>
+                      <div class="chart__column" style="--percent: 100"></div>
+                      <div class="chart__column" style="--percent: 25"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Histogram</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Histogram -->
+
+              <!-- Avatar -->
+              <a class="card" href="./pages/avatar-component-page.html">
+                <div class="card__content">
+                  <img
+                    class="avatar avatar_lg"
+                    src="./06-lection4/01-avatar/public/avatar-200.jpg"
+                    alt="аватар пользователя"
+                  />
+                </div>
+                <div class="card__title">Avatar</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Avatar -->
+
+              <!-- Skeleton -->
+              <a class="card" href="./pages/skeleton-component-page.html">
+                <div class="card__content">
+                  <div class="skeleton skeleton_preview">
+                    <div class="skeleton__info-top">
+                      <div class="skeleton__logo"></div>
+
+                      <div class="skeleton__text">
+                        <div
+                          class="skeleton__line"
+                          style="--percent: 50%"
+                        ></div>
+                        <div
+                          class="skeleton__line"
+                          style="--percent: 75%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton__description">
+                      <div class="skeleton__line"></div>
+                      <div class="skeleton__line"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__title">Skeleton</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Skeleton -->
+
+              <!-- Button primary -->
+              <a class="card" href="./pages/button-primary-component-page.html">
+                <div class="card__content">
+                  <button
+                    class="column__item button button_primary button_preview"
+                  >
+                    Primary default
+                  </button>
+                  <button
+                    class="
+                      column__item
+                      button button_primary button_primary-hover button_preview
+                    "
+                  >
+                    Primary hover
+                  </button>
+                  <button
+                    class="column__item button button_primary button_preview"
+                    disabled
+                  >
+                    Primary disabled
+                  </button>
+                </div>
+                <div class="card__title">Button primary</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Button primary -->
+
+              <!-- Button secondary -->
+              <a class="card" href="./pages/button-secondary-component-page.html">
+                <div class="card__content">
+                  <button
+                    class="column__item button button_secondary button_preview"
+                  >
+                    Secondary default
+                  </button>
+                  <button
+                    class="
+                      column__item
+                      button
+                      button_secondary
+                      button_preview
+                      button_secondary-hover
+                    "
+                  >
+                    Secondary hover
+                  </button>
+                  <button
+                    class="column__item button button_secondary button_preview"
+                    disabled
+                  >
+                    Secondary disabled
+                  </button>
+                </div>
+                <div class="card__title">Button secondary</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Button secondary -->
+
+              <!-- Button alternate -->
+              <a class="card" href="./pages/button-alternate-component-page.html">
+                <div class="card__content">
+                  <button
+                    class="column__item button button_alternate button_preview"
+                  >
+                    Alternate default
+                  </button>
+                  <button
+                    class="
+                      column__item
+                      button
+                      button_alternate
+                      button_preview
+                      button_alternate-hover
+                    "
+                  >
+                    Alternate hover
+                  </button>
+                  <button
+                    class="column__item button button_alternate button_preview"
+                    disabled
+                  >
+                    Alternate disabled
+                  </button>
+                </div>
+                <div class="card__title">Button alternate</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Button alternate -->
+
+              <!-- Checkbox -->
+              <a class="card" href="./pages/checkbox-component-page.html">
+                <div class="card__content">
+                  <label class="checkbox checkbox_preview">
+                    <input class="checkbox__input" type="checkbox" value="" />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#check"></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Checkbox</div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox checkbox_preview">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      value=""
+                      checked
+                    />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#check"></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Checkbox</div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox checkbox_preview">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      value=""
+                      disabled
+                    />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <use xlink:href="./assets/svg-sprite.svg#check"></use>
+                        </svg>
+                      </div>
+
+                      <div class="checkbox__title">Checkbox</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Checkbox</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Checkbox -->
+
+              <!-- Radio -->
+              <a class="card" href="./pages/radio-component-page.html">
+                <div class="card__content">
+                  <label class="radio radio_preview">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      name="2"
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Radio</div>
+                    </div>
+                  </label>
+
+                  <label class="radio radio_preview">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      name="2"
+                      checked
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Radio</div>
+                    </div>
+                  </label>
+
+                  <label class="radio radio_preview">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      value=""
+                      disabled
+                    />
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__icon"></div>
+                      </div>
+
+                      <div class="radio__title">Radio</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Radio</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Radio -->
+
+              <!-- Toggler -->
+              <a class="card" href="./pages/toggler-component-page.html">
+                <div class="card__content">
+                  <label class="toggler toggler_preview">
+                    <input class="toggler__input" type="checkbox" value="" />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Toggler</div>
+                    </div>
+                  </label>
+
+                  <label class="toggler toggler_preview">
+                    <input
+                      class="toggler__input"
+                      type="checkbox"
+                      value=""
+                      checked
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Toggler</div>
+                    </div>
+                  </label>
+
+                  <label class="toggler toggler_preview">
+                    <input
+                      class="toggler__input"
+                      type="checkbox"
+                      value=""
+                      disabled
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                      <div class="toggler__title">Toggler</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Toggler</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Toggler -->
+
+              <!-- Input -->
+              <a class="card" href="./pages/input-component-page.html">
+                <div class="card__content">
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Disabled</div>
+
+                    <div class="input input_preview">
+                      <input
+                        class="input__field"
+                        type="text"
+                        value="Disabled"
+                        disabled
+                      />
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Success</div>
+
+                    <div class="input input_preview">
+                      <input class="input__field" type="text" value="Success" />
+
+                      <svg
+                        class="input__icon input__icon_success"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use xlink:href="./assets/svg-sprite.svg#success"></use>
+                      </svg>
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Focus</div>
+
+                    <div class="input input_preview">
+                      <input
+                        class="input__field input__field_focus"
+                        type="text"
+                        value="Focus"
+                      />
+                    </div>
+                  </label>
+
+                  <label class="form-input form-input_preview">
+                    <div class="form-input__title">Error</div>
+
+                    <div class="input input_preview">
+                      <input
+                        class="input__field input__field_error"
+                        type="text"
+                        value="Error"
+                      />
+
+                      <svg
+                        class="input__icon input__icon_error"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <use xlink:href="./assets/svg-sprite.svg#error"></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+                <div class="card__title">Input</div>
+                <div class="card__description">Element</div>
+              </a>
+              <!-- Input -->
             </div>
           </div>
         </div>

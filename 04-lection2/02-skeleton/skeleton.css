@@ -9,6 +9,10 @@
   gap: 24px;
 }
 
+.skeleton_preview {
+  width: 100%;
+}
+
 .skeleton__info-top {
   display: flex;
   flex-direction: row;
@@ -49,4 +53,19 @@
     #e3e7ea 77.5%,
     #dde2e5 102.52%
   );
+  animation: 0.8s loading_skeleeton;
+}
+
+/* animate */
+
+@keyframes loading_skeleeton {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }

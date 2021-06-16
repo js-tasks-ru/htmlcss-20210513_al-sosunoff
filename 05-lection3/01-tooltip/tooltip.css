@@ -4,6 +4,12 @@
   justify-content: center;
 }
 
+.tooltip_preview .tooltip__helper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(-50% - 19px));
+}
+
 .tooltip__trigger {
   width: 24px;
   height: 24px;

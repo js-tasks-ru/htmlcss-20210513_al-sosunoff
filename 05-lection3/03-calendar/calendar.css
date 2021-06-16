@@ -9,6 +9,17 @@
   --calendar-between: #eceffd;
 }
 
+.calendar_preview {
+  width: 85%;
+  padding: 10px 20px;
+}
+
+.calendar_preview .calendar__title {
+  margin-bottom: 15px;
+  line-height: 10px;
+  font-size: 13px;
+}
+
 .calendar__wrapper {
   position: relative;
   padding-bottom: 100%;

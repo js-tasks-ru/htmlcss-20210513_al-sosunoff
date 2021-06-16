@@ -5,109 +5,26 @@
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <link rel="stylesheet" href="./button.css" />
     <style>
-      .container {
-        width: 1100px;
+      body {
+        padding: 50px;
         display: flex;
-        margin: 0 auto;
-      }
-
-      .container__section-title {
-        width: 30%;
-      }
-
-      .container__section-title_flex-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .container__section-content {
-        width: 90%;
-      }
-
-      .container__section-content_space-evenly {
-        display: flex;
-        justify-content: space-evenly;
-      }
-
-      .container__title {
-        font-size: 38px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 46px;
-        letter-spacing: 0em;
-        text-align: left;
-      }
-
-      .column {
-        display: flex;
+        gap: 5px;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-      .column__item {
-        margin-bottom: 10px;
-      }
-
-      .column__title {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #acb5bd;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div
-        class="container__section-title container__section-title_flex-center"
-      >
-        <div class="container__title">Buttons</div>
-      </div>
+    <button class="column__item button button_primary">Primary</button>
+    <button class="column__item button button_primary" disabled>Primary</button>
 
-      <div
-        class="
-          container__section-content container__section-content_space-evenly
-        "
-      >
-        <div class="column">
-          <div class="column__item">
-            <div class="column__title">default</div>
-          </div>
-          <div class="column__item">
-            <div class="column__title">disabled</div>
-          </div>
-        </div>
+    <button class="column__item button button_secondary">Secondary</button>
+    <button class="column__item button button_secondary" disabled>
+      Secondary
+    </button>
 
-        <div class="column">
-          <button class="column__item button button_primary">Primary</button>
-          <button class="column__item button button_primary" disabled>
-            Primary
-          </button>
-        </div>
-
-        <div class="column">
-          <button class="column__item button button_secondary">
-            Secondary
-          </button>
-          <button class="column__item button button_secondary" disabled>
-            Secondary
-          </button>
-        </div>
-
-        <div class="column">
-          <button class="column__item button button_alternate">
-            Alternate
-          </button>
-          <button class="column__item button button_alternate" disabled>
-            Alternate
-          </button>
-        </div>
-      </div>
-    </div>
+    <button class="column__item button button_alternate">Alternate</button>
+    <button class="column__item button button_alternate" disabled>
+      Alternate
+    </button>
   </body>
 </html>
