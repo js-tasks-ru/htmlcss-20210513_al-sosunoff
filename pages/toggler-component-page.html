@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../components/page/page.css" />
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/menu/menu.css" />
+    <link rel="stylesheet" href="../components/main/main.css" />
+    <link rel="stylesheet" href="../components/card/card.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../components/logo/logo.css" />
+    <link rel="stylesheet" href="../components/tabs/tabs.css" />
+
+    <link
+      rel="stylesheet"
+      href="../components/component-layout/component-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../components/component-menu/component-menu.css"
+    />
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="../components/component-view/component-view.css"
+    />
+    <!-- css component -->
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header header_border-bottom">
+        <div class="page__box">
+          <div class="header__top">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="../components/logo/logo.svg#logo"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="page__box">
+          <h1 class="header__title">Reusable component library</h1>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="page__box">
+          <div class="component-layout">
+            <div class="sidebar">
+              <div class="component-menu">
+                <div class="component-menu__title">Elements</div>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/histogram-component-page.html"
+                  >Histogram</a
+                >
+                <a
+                  class="component-menu__link"
+                  href="./../pages/avatar-component-page.html"
+                >
+                  Avatar
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/skeleton-component-page.html"
+                >
+                  Skeleton
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/button-primary-component-page.html"
+                >
+                  Button primary
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/button-secondary-component-page.html"
+                >
+                  Button secondary
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/button-alternate-component-page.html"
+                >
+                  Button alternate
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/checkbox-component-page.html"
+                >
+                  Checkbox
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/radio-component-page.html"
+                >
+                  Radio
+                </a>
+                <a
+                  class="component-menu__link component-menu__link_active"
+                  href="./../pages/toggler-component-page.html"
+                >
+                  Toggler
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/input-component-page.html"
+                >
+                  Input
+                </a>
+              </div>
+
+              <div class="component-menu">
+                <div class="component-menu__title">Containers</div>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/tooltip-component-page.html"
+                >
+                  Tooltip
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/calendar-component-page.html"
+                >
+                  Calendar
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/accordion-component-page.html"
+                >
+                  Accordion
+                </a>
+                <a
+                  class="component-menu__link"
+                  href="./../pages/modal-component-page.html"
+                >
+                  Modal
+                </a>
+              </div>
+            </div>
+
+            <div class="component-view">
+              <div class="component-view__title">Toggler</div>
+
+              <div
+                class="
+                  component-view__component
+                  component-view__component_center
+                  component-view__component_direction-column
+                "
+              >
+                <!-- Toggler -->
+                <label class="toggler">
+                  <input class="toggler__input" type="checkbox" value="" />
+                  <div class="toggler__state">
+                    <div class="toggler__control"></div>
+                    <div class="toggler__title">Toggler</div>
+                  </div>
+                </label>
+
+                <label class="toggler">
+                  <input
+                    class="toggler__input"
+                    type="checkbox"
+                    value=""
+                    checked
+                  />
+                  <div class="toggler__state">
+                    <div class="toggler__control"></div>
+                    <div class="toggler__title">Toggler</div>
+                  </div>
+                </label>
+
+                <label class="toggler">
+                  <input
+                    class="toggler__input"
+                    type="checkbox"
+                    value=""
+                    disabled
+                  />
+                  <div class="toggler__state">
+                    <div class="toggler__control"></div>
+                    <div class="toggler__title">Toggler</div>
+                  </div>
+                </label>
+                <!-- Toggler -->
+              </div>
+
+              <div class="component-view__code">
+                <div class="tabs">
+                  <input
+                    class="tabs__trigger"
+                    type="radio"
+                    id="html"
+                    name="tabs"
+                    checked
+                  />
+                  <input
+                    class="tabs__trigger"
+                    type="radio"
+                    id="css"
+                    name="tabs"
+                  />
+
+                  <div
+                    class="tabs__menu"
+                    style="--tabs__menu_padding: 0 0 0 48px"
+                  >
+                    <div class="tabs__scroller">
+                      <label class="tabs__label" for="html">HTML</label>
+                      <label class="tabs__label" for="css">CSS</label>
+                    </div>
+                  </div>
+
+                  <div class="tabs__content tabs__content_html">
+                    <pre>
+                      <code>
+                      </code>
+                    </pre>
+                  </div>
+
+                  <div class="tabs__content tabs__content_css">
+                    <pre>
+                      <code>
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="page__box">
+          <div class="footer__description">Reusable component library</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

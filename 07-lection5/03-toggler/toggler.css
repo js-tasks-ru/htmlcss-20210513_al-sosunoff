@@ -42,6 +42,18 @@
   left: 1px;
   border-radius: 16px;
   position: absolute;
+  z-index: 1;
+}
+
+.toggler__control::after {
+  content: 'off';
+  transition: color 0.2s linear;
+  top: 50%;
+  left: 26px;
+  border-radius: 16px;
+  position: absolute;
+  color: var(--grey-3);
+  transform: translateY(-50%);
 }
 
 .toggler__title {
@@ -57,14 +69,25 @@
   border: 1px solid var(--blue);
 }
 
-.toggler__input:checked ~ .toggler__state .toggler__control:before {
+.toggler__input:checked ~ .toggler__state .toggler__control::before {
   left: 25px;
+  animation: checked_toggler 0.2s linear 0.2s;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control::after {
+  content: 'on';
+  color: #fff;
+  left: 4px;
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__control {
   border: 1px solid var(--grey-3);
   background-color: var(--grey-3);
   cursor: default;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control::after {
+  content: '';
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__title {
@@ -74,4 +97,16 @@
 
 .toggler__input:focus ~ .toggler__state .toggler__title {
   text-decoration: underline;
+}
+
+/* animate */
+
+@keyframes checked_toggler {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--blue);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 15px transparent;
+  }
 }
