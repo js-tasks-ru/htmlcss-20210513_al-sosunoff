@@ -1,4 +1,11 @@
 .logo {
   height: 32px;
   color: var(--black);
+  width: 110px;
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    margin-right: auto;
+  }
 }

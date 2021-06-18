@@ -39,5 +39,16 @@
                 d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z"
                 fill="currentColor" />
         </symbol>
+
+        <symbol id="logo">
+            <rect x="0" width="30" height="30" fill="currentColor" />
+            <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
+            <path d="M78 0 L110 32 H78 V0 Z" fill="currentColor" />
+        </symbol>
+
+        <symbol id="burger_menu_close" fill="none">
+            <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol> 
     </defs>
 </svg>
