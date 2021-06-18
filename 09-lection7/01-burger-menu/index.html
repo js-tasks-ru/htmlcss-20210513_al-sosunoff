@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../components/footer/footer.css" />
     <link rel="stylesheet" href="../../components/logo/logo.css" />
     <link rel="stylesheet" href="../../components/tabs/tabs.css" />
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css" />
 
     <link
       rel="stylesheet"
@@ -41,10 +42,6 @@
       href="../../components/burger-menu/burger-menu-close.css"
     />
     <link rel="stylesheet" href="../../components/dark-mode/dark-mode.css" />
-    <link
-      rel="stylesheet"
-      href="../../components/dark-mode/dark-mode-toggler.css"
-    />
     <script defer src="./burger-menu.js"></script>
   </head>
   <body class="preload">
@@ -70,14 +67,10 @@
         <div class="dark-mode">
           <div class="dark-mode__title">Dark mode</div>
           <div class="dark-mode__control">
-            <label class="dark-mode-toggler">
-              <input
-                class="dark-mode-toggler__input"
-                type="checkbox"
-                value=""
-              />
-              <div class="dark-mode-toggler__state">
-                <div class="dark-mode-toggler__control"></div>
+            <label class="toggler toggler_mode-dark">
+              <input class="toggler__input" type="checkbox" value="" />
+              <div class="toggler__state">
+                <div class="toggler__control"></div>
               </div>
             </label>
           </div>
