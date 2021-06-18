@@ -3,7 +3,7 @@
 }
 
 .burger-menu {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -22,4 +22,10 @@
   display: flex;
   padding-top: 17px;
   padding-bottom: 17px;
+}
+
+@media screen and (max-width: 375px) {
+  .burger-menu {
+    display: flex;
+  }
 }

@@ -47,7 +47,7 @@
     />
     <script defer src="./burger-menu.js"></script>
   </head>
-  <body>
+  <body class="preload">
     <div id="burger-menu" class="burger-menu">
       <div class="page__box burger-menu__header">
         <div id="burger-menu-close" class="burger-menu-close">
@@ -202,5 +202,11 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('preload');
+      });
+    </script>
   </body>
 </html>
