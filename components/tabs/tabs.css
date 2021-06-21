@@ -41,7 +41,7 @@
   left: 0;
   right: 0;
   height: 5px;
-  background: var(--black);
+  background: var(--font-color);
   visibility: hidden;
 }
 
@@ -53,7 +53,7 @@
 
 /* all tab */
 #all-tab:checked ~ .tabs__menu .tabs__scroller [for='all-tab'] {
-  color: var(--black);
+  color: var(--font-color);
 }
 #all-tab:checked ~ .tabs__content_all {
   display: block;
@@ -64,7 +64,7 @@
 
 /* container-tab */
 #container-tab:checked ~ .tabs__menu .tabs__scroller [for='container-tab'] {
-  color: var(--black);
+  color: var(--font-color);
 }
 #container-tab:checked ~ .tabs__content_container {
   display: block;
@@ -78,7 +78,7 @@
 
 /* element-tab */
 #element-tab:checked ~ .tabs__menu .tabs__scroller [for='element-tab'] {
-  color: var(--black);
+  color: var(--font-color);
 }
 #element-tab:checked ~ .tabs__content_element {
   display: block;
@@ -89,7 +89,7 @@
 
 /* html */
 #html:checked ~ .tabs__menu .tabs__scroller [for='html'] {
-  color: var(--black);
+  color: var(--font-color);
 }
 #html:checked ~ .tabs__content_html {
   display: block;
@@ -100,7 +100,7 @@
 
 /* css */
 #css:checked ~ .tabs__menu .tabs__scroller [for='css'] {
-  color: var(--black);
+  color: var(--font-color);
 }
 #css:checked ~ .tabs__content_css {
   display: block;

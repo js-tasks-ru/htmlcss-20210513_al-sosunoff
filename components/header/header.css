@@ -1,7 +1,7 @@
 .header {
   padding-top: 25px;
   height: 237px;
-  background-color: var(--white);
+  background-color: var(--header-color-bg);
 }
 
 .header_border-bottom {
@@ -19,7 +19,7 @@
   font-weight: 500;
   font-size: 50px;
   line-height: 64px;
-  color: var(--black);
+  color: var(--font-color);
 }
 
 @media screen and (max-width: 375px) {
