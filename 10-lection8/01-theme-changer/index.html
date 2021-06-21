@@ -1,15 +1,187 @@
 <!DOCTYPE html>
-<!-- Пример использования theme-changer -->
 <html lang="ru">
-    <head>
-        <style>
-            html[data-theme-dark] {
-                background: #000;
-            }
-        </style>
-        <script defer src="./theme-changer.js"></script>
-    </head>
-    <body>
-        <input type="checkbox" id="theme-changer">
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../components/page/page.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../components/menu/menu.css" />
+    <link rel="stylesheet" href="../../components/main/main.css" />
+    <link rel="stylesheet" href="../../components/card/card.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../components/logo/logo.css" />
+    <link rel="stylesheet" href="../../components/tabs/tabs.css" />
+
+    <link
+      rel="stylesheet"
+      href="../../components/component-layout/component-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../components/component-menu/component-menu.css"
+    />
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="../../components/component-view/component-view.css"
+    />
+    <!-- css component -->
+    <link
+      rel="stylesheet"
+      href="../../04-lection2/01-histogram/histogram.css"
+    />
+    <!-- css togglrt theme -->
+    <style>
+      html[data-theme-dark] {
+        background: #000;
+      }
+    </style>
+    <!-- js toggler theme -->
+    <script defer src="./theme-changer.js"></script>
+  </head>
+  <body>
+    <!-- id="theme-changer" -->
+    <div class="page">
+      <header class="header header_border-bottom">
+        <div class="page__box">
+          <div class="header__top">
+            <a href="../">
+              <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="../../assets/svg-sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="page__box">
+          <h1 class="header__title">Reusable component library</h1>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="page__box">
+          <div class="component-layout">
+            <div class="sidebar">
+              <div class="component-menu">
+                <div class="component-menu__title">Elements</div>
+                <div class="component-menu__link component-menu__link_active">
+                  Histogram
+                </div>
+                <div class="component-menu__link">Avatar</div>
+                <div class="component-menu__link">Skeleton</div>
+                <div class="component-menu__link">Button primary</div>
+                <div class="component-menu__link">Button secondary</div>
+                <div class="component-menu__link">Button alternate</div>
+                <div class="component-menu__link">Checkbox</div>
+                <div class="component-menu__link">Radio</div>
+                <div class="component-menu__link">Toggler</div>
+                <div class="component-menu__link">Input</div>
+              </div>
+
+              <div class="component-menu">
+                <div class="component-menu__title">Containers</div>
+                <div class="component-menu__link">Tooltip</div>
+                <div class="component-menu__link">Calendar</div>
+                <div class="component-menu__link">Accordion</div>
+                <div class="component-menu__link">Modal</div>
+              </div>
+            </div>
+
+            <div class="component-view">
+              <div class="component-view__title">Histogram</div>
+
+              <div class="component-view__component">
+                <!-- Histogram -->
+                <div class="histogram">
+                  <div class="histogram__header">
+                    <div class="histogram__title">Total orders</div>
+                    <div class="histogram__link">View all</div>
+                  </div>
+
+                  <div class="histogram__number">50254</div>
+
+                  <div class="chart">
+                    <div class="chart__column"></div>
+                    <div class="chart__column" style="--percent: 30"></div>
+                    <div class="chart__column" style="--percent: 20"></div>
+                    <div class="chart__column" style="--percent: 60"></div>
+                    <div class="chart__column" style="--percent: 60"></div>
+                    <div class="chart__column" style="--percent: 100"></div>
+                    <div class="chart__column" style="--percent: 100"></div>
+                    <div class="chart__column" style="--percent: 30"></div>
+                    <div class="chart__column" style="--percent: 20"></div>
+                    <div class="chart__column" style="--percent: 95"></div>
+                    <div class="chart__column" style="--percent: 25"></div>
+                    <div class="chart__column" style="--percent: 35"></div>
+                    <div class="chart__column" style="--percent: 20"></div>
+                    <div class="chart__column" style="--percent: 30"></div>
+                    <div class="chart__column" style="--percent: 20"></div>
+                    <div class="chart__column" style="--percent: 60"></div>
+                    <div class="chart__column" style="--percent: 100"></div>
+                    <div class="chart__column" style="--percent: 95"></div>
+                    <div class="chart__column" style="--percent: 60"></div>
+                    <div class="chart__column" style="--percent: 30"></div>
+                    <div class="chart__column" style="--percent: 20"></div>
+                    <div class="chart__column" style="--percent: 60"></div>
+                    <div class="chart__column" style="--percent: 100"></div>
+                    <div class="chart__column" style="--percent: 25"></div>
+                  </div>
+                </div>
+                <!-- Histogram -->
+              </div>
+
+              <div class="component-view__code">
+                <div class="tabs">
+                  <input
+                    class="tabs__trigger"
+                    type="radio"
+                    id="html"
+                    name="tabs"
+                    checked
+                  />
+                  <input
+                    class="tabs__trigger"
+                    type="radio"
+                    id="css"
+                    name="tabs"
+                  />
+
+                  <div
+                    class="tabs__menu"
+                    style="--tabs__menu_padding: 0 0 0 48px"
+                  >
+                    <div class="tabs__scroller">
+                      <label class="tabs__label" for="html">HTML</label>
+                      <label class="tabs__label" for="css">CSS</label>
+                    </div>
+                  </div>
+
+                  <div class="tabs__content tabs__content_html">
+                    <pre>
+                      <code>
+                      </code>
+                    </pre>
+                  </div>
+
+                  <div class="tabs__content tabs__content_css">
+                    <pre>
+                      <code>
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="page__box">
+          <div class="footer__description">Reusable component library</div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
