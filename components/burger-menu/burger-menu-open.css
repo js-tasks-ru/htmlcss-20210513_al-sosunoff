@@ -1,0 +1,20 @@
+.burger-menu-open {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  display: none;
+}
+
+.burger-menu-open__icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .burger-menu-open {
+    display: flex;
+  }
+}

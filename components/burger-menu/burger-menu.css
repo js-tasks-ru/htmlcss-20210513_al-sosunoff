@@ -1,0 +1,31 @@
+.burger-menu[data-open=''] {
+  transform: translateX(0);
+}
+
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: var(--white);
+  z-index: 2;
+  gap: 32px;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.25s linear;
+  background-color: #f9fafc;
+}
+
+.burger-menu__header {
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+@media screen and (max-width: 375px) {
+  .burger-menu {
+    display: flex;
+  }
+}
