@@ -67,27 +67,27 @@
 
 /* alternate */
 .button_alternate {
-  color: var(--serovato-blue);
+  color: var(--grey-4);
   border: 1px solid var(--alternate);
 }
 
 .button_alternate:hover {
-  color: var(--serovato-blue);
+  color: var(--grey-4);
   border: 1px solid var(--alternate-hover);
 }
 
 .button_alternate-hover {
-  color: var(--serovato-blue);
+  color: var(--grey-4);
   border: 1px solid var(--alternate-hover);
 }
 
 .button_alternate:active {
-  color: var(--serovato-blue);
+  color: var(--grey-4);
   border: 1px solid var(--alternate-active);
 }
 
 .button_alternate:disabled {
-  color: var(--serovato-blue);
+  color: var(--grey-4);
   border: 1px solid var(--alternate);
   opacity: 0.5;
   pointer-events: none;
