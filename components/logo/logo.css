@@ -1,7 +1,9 @@
 .logo {
   height: 32px;
-  color: var(--black);
+  color: var(--logo);
   width: 110px;
+  /* stroke: var(--grey-4);
+  fill: var(--dark-bg); */
 }
 
 @media screen and (max-width: 375px) {
