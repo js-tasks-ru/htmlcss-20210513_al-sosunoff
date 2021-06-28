@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../components/logo/logo.css" />
     <link rel="stylesheet" href="../components/tabs/tabs.css" />
 
+    <!-- toggler -->
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css" />
+    <!-- toggler -->
+
     <link
       rel="stylesheet"
       href="../components/component-layout/component-layout.css"
@@ -26,15 +30,138 @@
       rel="stylesheet"
       href="../components/component-view/component-view.css"
     />
-    <!-- css component -->
+
+    <!-- avatar -->
     <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css" />
+    <!-- avatar -->
+
+    <!-- burger menu -->
+    <link rel="stylesheet" href="../components/burger-menu/burger-menu.css" />
+    <link
+      rel="stylesheet"
+      href="../components/burger-menu/burger-menu-open.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../components/burger-menu/burger-menu-close.css"
+    />
+    <script defer src="../assets/js/burger-menu.js"></script>
+    <!-- burger menu -->
+
+    <link rel="stylesheet" href="../components/dark-mode/dark-mode.css" />
   </head>
-  <body>
+  <body class="preload">
+    <!-- burger menu -->
+    <div id="burger-menu" class="burger-menu">
+      <div class="page__box burger-menu__header">
+        <div id="burger-menu-close" class="burger-menu-close">
+          <svg
+            class="burger-menu-close__icon"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use
+              xlink:href="../../assets/svg-sprite.svg#burger_menu_close"
+            ></use>
+          </svg>
+        </div>
+
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="../../assets/svg-sprite.svg#logo"></use>
+        </svg>
+      </div>
+
+      <div class="page__box burger-menu__item">
+        <div class="dark-mode">
+          <div class="dark-mode__title">Dark mode</div>
+          <div class="dark-mode__control">
+            <label class="toggler toggler_mode-dark">
+              <input class="toggler__input" type="checkbox" value="" />
+              <div class="toggler__state">
+                <div class="toggler__control"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__box component-menu burger-menu__item">
+        <div class="component-menu__title">Elements</div>
+
+        <a class="component-menu__link" href="./histogram-component-page.html"
+          >Histogram</a
+        >
+        <a class="component-menu__link" href="./avatar-component-page.html"
+          >Avatar</a
+        >
+        <a class="component-menu__link" href="./skeleton-component-page.html"
+          >Skeleton</a
+        >
+        <a
+          class="component-menu__link"
+          href="./button-primary-component-page.html"
+          >Button primary</a
+        >
+        <a
+          class="component-menu__link"
+          href="./button-secondary-component-page.html"
+          >Button secondary</a
+        >
+        <a
+          class="component-menu__link"
+          href="./button-alternate-component-page.html"
+          >Button alternate</a
+        >
+        <a class="component-menu__link" href="./checkbox-component-page.html"
+          >Chekbox</a
+        >
+        <a class="component-menu__link" href="./radio-component-page.html"
+          >Radio</a
+        >
+        <a class="component-menu__link" href="./toggler-component-page.html"
+          >Toggler</a
+        >
+        <a class="component-menu__link" href="./input-component-page.html"
+          >Input</a
+        >
+      </div>
+
+      <div class="page__box component-menu burger-menu__item">
+        <div class="component-menu__title">Containers</div>
+
+        <a class="component-menu__link" href="./tooltip-component-page.html"
+          >Tooltip</a
+        >
+        <a class="component-menu__link" href="./calendar-component-page.html"
+          >Calendar</a
+        >
+        <a class="component-menu__link" href="./accordion-component-page.html"
+          >Accordion</a
+        >
+        <a class="component-menu__link" href="./modal-component-page.html"
+          >Modal</a
+        >
+      </div>
+    </div>
+    <!-- burger menu -->
+
     <div class="page">
       <header class="header header_border-bottom">
         <div class="page__box">
           <div class="header__top">
-            <a href="../">
+            <!-- burger menu -->
+            <div class="header__burger">
+              <div id="burger-menu-open" class="burger-menu-open">
+                <svg
+                  class="burger-menu-open__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use xlink:href="../assets/svg-sprite.svg#burger_menu"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- burger menu -->
+
+            <a href="../" class="header__logo">
               <svg class="logo" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="../assets/svg-sprite.svg#logo"></use>
               </svg>
@@ -212,5 +339,13 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      /* preload */
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('preload');
+      });
+      /* preload */
+    </script>
   </body>
 </html>
