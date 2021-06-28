@@ -42,7 +42,7 @@
       href="../../components/burger-menu/burger-menu-close.css"
     />
     <link rel="stylesheet" href="../../components/dark-mode/dark-mode.css" />
-    <script defer src="./burger-menu.js"></script>
+    <script defer src="../../assets/js/burger-menu.js"></script>
   </head>
   <body class="preload">
     <div id="burger-menu" class="burger-menu">
@@ -63,7 +63,7 @@
         </svg>
       </div>
 
-      <div class="page__box">
+      <div class="page__box burger-menu__item">
         <div class="dark-mode">
           <div class="dark-mode__title">Dark mode</div>
           <div class="dark-mode__control">
@@ -77,14 +77,14 @@
         </div>
       </div>
 
-      <div class="page__box component-menu">
+      <div class="page__box component-menu burger-menu__item">
         <div class="component-menu__title">Elements</div>
         <div class="component-menu__link">Histogram</div>
         <div class="component-menu__link">Avatar</div>
         <div class="component-menu__link">Skeleton</div>
       </div>
 
-      <div class="page__box component-menu">
+      <div class="page__box component-menu burger-menu__item">
         <div class="component-menu__title">Containers</div>
         <div class="component-menu__link">Tooltip</div>
         <div class="component-menu__link">Calendar</div>
@@ -95,18 +95,26 @@
       <header class="header header_border-bottom">
         <div class="page__box">
           <div class="header__top">
-            <div id="burger-menu-open" class="burger-menu-open">
-              <svg
-                class="burger-menu-open__icon"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <use xlink:href="../../assets/svg-sprite.svg#burger_menu"></use>
-              </svg>
+            <!-- burger menu -->
+            <div class="header__burger">
+              <div id="burger-menu-open" class="burger-menu-open">
+                <svg
+                  class="burger-menu-open__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use
+                    xlink:href="../../assets/svg-sprite.svg#burger_menu"
+                  ></use>
+                </svg>
+              </div>
             </div>
+            <!-- burger menu -->
 
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="../../assets/svg-sprite.svg#logo"></use>
-            </svg>
+            <a href="../" class="header__logo">
+              <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="../../assets/svg-sprite.svg#logo"></use>
+              </svg>
+            </a>
           </div>
         </div>
 

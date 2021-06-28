@@ -2,12 +2,5 @@
   height: 32px;
   color: var(--logo);
   width: 110px;
-  /* stroke: var(--grey-4);
-  fill: var(--dark-bg); */
 }
 
-@media screen and (max-width: 375px) {
-  .logo {
-    margin-right: auto;
-  }
-}
