@@ -45,6 +45,16 @@
     <!-- burger menu -->
 
     <link rel="stylesheet" href="../components/dark-mode/dark-mode.css" />
+
+    <!-- css toggler theme -->
+    <style>
+      html[data-theme-dark] {
+        background: #000;
+      }
+    </style>
+    <link rel="stylesheet" href="../components/sun/sun.css" />
+    <link rel="stylesheet" href="../components/moon/moon.css" />
+    <!-- css toggler theme -->
   </head>
   <body class="preload">
     <!-- burger menu -->
@@ -162,6 +172,33 @@
                 <use xlink:href="../assets/svg-sprite.svg#logo"></use>
               </svg>
             </a>
+
+            <div class="menu">
+              <!-- <div class="menu__item menu__item_active">Components</div> -->
+              <!-- <div class="menu__item">About</div> -->
+              <!-- <div class="menu__item">Contact</div> -->
+
+              <div class="menu__item">
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="../assets/svg-sprite.svg#sun"></use>
+                </svg>
+              </div>
+
+              <div class="menu__item">
+                <label id="theme-changer" class="toggler toggler_mode-dark">
+                  <input class="toggler__input" type="checkbox" value="" />
+                  <div class="toggler__state">
+                    <div class="toggler__control"></div>
+                  </div>
+                </label>
+              </div>
+
+              <div class="menu__item">
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="../assets/svg-sprite.svg#moon"></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -373,5 +410,12 @@
       });
       /* preload */
     </script>
+
+    <!-- js toggler theme -->
+    <script
+      defer
+      src="../10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
+    <!-- js toggler theme -->
   </body>
 </html>
