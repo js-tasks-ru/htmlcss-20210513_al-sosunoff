@@ -19,7 +19,7 @@
 }
 
 .menu__item_active {
-  color: var(--black);
+  color: var(--font-color);
 }
 
 @media screen and (max-width: 375px) {

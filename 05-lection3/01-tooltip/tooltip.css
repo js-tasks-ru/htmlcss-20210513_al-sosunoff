@@ -13,7 +13,7 @@
 .tooltip__trigger {
   width: 24px;
   height: 24px;
-  color: var(--black);
+  color: var(--font-color);
   z-index: 1;
   position: relative;
 }

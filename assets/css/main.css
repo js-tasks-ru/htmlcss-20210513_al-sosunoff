@@ -67,6 +67,8 @@ html:not(.style-scope)[data-theme-dark] {
   --font-color: #ffffff75;
   --dark-bg: var(--grey-4);
   --logo: var(--grey-1);
+
+  --alternate-hover: var(--grey-4);
 }
 
 html:not(.style-scope)[data-mode='dark'] img {
