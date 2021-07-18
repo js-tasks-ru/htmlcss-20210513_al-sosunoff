@@ -21,6 +21,8 @@
   display: flex;
   padding-top: 17px;
   padding-bottom: 17px;
+  justify-content: center;
+  align-items: center;
 }
 
 .burger-menu__item {
