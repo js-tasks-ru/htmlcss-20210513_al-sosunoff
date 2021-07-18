@@ -41,6 +41,10 @@
   .component-view__title {
     font-size: 20px;
     line-height: 26px;
-    padding: 20px 0px;
+    padding: 20px 16px;
+  }
+
+  .component-view__component {
+    padding: 0px 16px;
   }
 }
