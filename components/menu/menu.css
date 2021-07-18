@@ -3,6 +3,9 @@
   gap: 24px;
 }
 
+.menu_component {
+}
+
 .menu__item {
   font-family: Inter;
   font-style: normal;
@@ -17,4 +20,10 @@
 
 .menu__item_active {
   color: var(--black);
+}
+
+@media screen and (max-width: 375px) {
+  .menu_component {
+    display: none;
+  }
 }
