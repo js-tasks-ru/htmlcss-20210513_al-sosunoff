@@ -52,8 +52,10 @@
         background: #000;
       }
     </style>
-    <link rel="stylesheet" href="../components/sun/sun.css" />
-    <link rel="stylesheet" href="../components/moon/moon.css" />
+    <link
+      rel="stylesheet"
+      href="../components/toogler-change-theme/toogler-change-theme.css"
+    />
     <!-- css toggler theme -->
   </head>
   <body class="preload">
@@ -179,24 +181,34 @@
               <!-- <div class="menu__item">Contact</div> -->
 
               <div class="menu__item">
-                <svg class="sun" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="../assets/svg-sprite.svg#sun"></use>
-                </svg>
-              </div>
+                <div class="toggler-change-theme">
+                  <svg
+                    class="toggler-change-theme__sun"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="../assets/svg-sprite.svg#sun"></use>
+                  </svg>
 
-              <div class="menu__item">
-                <label id="theme-changer" class="toggler toggler_mode-dark">
-                  <input class="toggler__input" type="checkbox" value="" />
-                  <div class="toggler__state">
-                    <div class="toggler__control"></div>
-                  </div>
-                </label>
-              </div>
+                  <label
+                    id="theme-changer"
+                    class="
+                      toggler-change-theme__toggler
+                      toggler toggler_mode-dark
+                    "
+                  >
+                    <input class="toggler__input" type="checkbox" value="" />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                    </div>
+                  </label>
 
-              <div class="menu__item">
-                <svg class="moon" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="../assets/svg-sprite.svg#moon"></use>
-                </svg>
+                  <svg
+                    class="toggler-change-theme__moon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="../assets/svg-sprite.svg#moon"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
