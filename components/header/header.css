@@ -27,10 +27,6 @@
   display: flex;
 }
 
-.header__logo_component {
-
-}
-
 .header__burger {
   margin-right: auto;
   display: none;
