@@ -31,16 +31,62 @@
     <link rel="stylesheet" href="./07-lection5/02-radio/radio.css" />
     <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css" />
     <link rel="stylesheet" href="./07-lection5/04-input/input.css" />
-    <style></style>
+
+    <!-- css toggler theme -->
+    <style>
+      html[data-theme-dark] {
+        background: #000;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="./components/toogler-change-theme/toogler-change-theme.css"
+    />
+    <!-- css toggler theme -->
   </head>
   <body>
     <div class="page">
       <header class="header">
         <div class="page__box">
           <div class="header__top">
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./assets/svg-sprite.svg#logo"></use>
-            </svg>
+            <a href="./">
+              <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./assets/svg-sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <div class="menu">
+              <!-- <div class="menu__item menu__item_active">Components</div> -->
+              <!-- <div class="menu__item">About</div> -->
+              <!-- <div class="menu__item">Contact</div> -->
+
+              <!-- <div class="menu__item"></div> -->
+
+              <div class="menu__item">
+                <div class="toggler-theme">
+                  <svg
+                    class="toggler-theme__sun"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="./assets/svg-sprite.svg#sun"></use>
+                  </svg>
+
+                  <label class="theme-changer toggler toggler_mode-dark">
+                    <input class="toggler__input" type="checkbox" value="" />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                    </div>
+                  </label>
+
+                  <svg
+                    class="toggler-theme__moon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="./assets/svg-sprite.svg#moon"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -390,7 +436,10 @@
               <!-- Button primary -->
 
               <!-- Button secondary -->
-              <a class="card" href="./pages/button-secondary-component-page.html">
+              <a
+                class="card"
+                href="./pages/button-secondary-component-page.html"
+              >
                 <div class="card__content">
                   <button
                     class="column__item button button_secondary button_preview"
@@ -421,7 +470,10 @@
               <!-- Button secondary -->
 
               <!-- Button alternate -->
-              <a class="card" href="./pages/button-alternate-component-page.html">
+              <a
+                class="card"
+                href="./pages/button-alternate-component-page.html"
+              >
                 <div class="card__content">
                   <button
                     class="column__item button button_alternate button_preview"
@@ -1000,7 +1052,10 @@
               <!-- Button primary -->
 
               <!-- Button secondary -->
-              <a class="card" href="./pages/button-secondary-component-page.html">
+              <a
+                class="card"
+                href="./pages/button-secondary-component-page.html"
+              >
                 <div class="card__content">
                   <button
                     class="column__item button button_secondary button_preview"
@@ -1031,7 +1086,10 @@
               <!-- Button secondary -->
 
               <!-- Button alternate -->
-              <a class="card" href="./pages/button-alternate-component-page.html">
+              <a
+                class="card"
+                href="./pages/button-alternate-component-page.html"
+              >
                 <div class="card__content">
                   <button
                     class="column__item button button_alternate button_preview"
@@ -1309,5 +1367,12 @@
         </div>
       </footer>
     </div>
+
+    <!-- js toggler theme -->
+    <script
+      defer
+      src="./10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
+    <!-- js toggler theme -->
   </body>
 </html>

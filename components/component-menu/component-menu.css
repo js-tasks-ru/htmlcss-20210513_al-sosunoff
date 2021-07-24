@@ -21,7 +21,6 @@
   line-height: 22px;
   color: var(--font-color);
   margin: 4px 0px;
-  transition: color 0.25s ease-in-out;
   text-decoration: none;
 }
 

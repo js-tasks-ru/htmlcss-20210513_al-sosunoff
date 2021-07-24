@@ -11,6 +11,7 @@
 .header__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__title {
@@ -22,25 +23,42 @@
   color: var(--font-color);
 }
 
+.header__logo {
+  display: flex;
+}
+
+.header__burger {
+  margin-right: auto;
+  display: none;
+}
+
 @media screen and (max-width: 375px) {
   .header {
-    padding-top: 16px;
     height: 80px;
-  }
-
-  .header__top {
+    padding-top: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 
-  .header__title {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 38px;
-    color: var(--grey-4);
+  .header__burger {
+    display: block;
+  }
 
-    margin: 49px 0 69px;
+  .header__top {
+    justify-content: center;
+  }
+
+  .header__logo_component {
+    display: none;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__title {
+    display: none;
   }
 }

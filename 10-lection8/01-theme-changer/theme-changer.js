@@ -1,6 +1,8 @@
-const changer = document.getElementById('theme-changer');
+const changer = document.getElementsByClassName('theme-changer');
 const html = document.documentElement;
 
-changer.addEventListener('change', function() {
+Array.from(changer).forEach((item) => {
+  item.addEventListener('change', function () {
     html.toggleAttribute('data-theme-dark');
+  });
 });

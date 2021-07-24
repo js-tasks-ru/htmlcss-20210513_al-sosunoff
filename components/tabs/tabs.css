@@ -108,3 +108,9 @@
 #css:checked ~ .tabs__menu .tabs__scroller [for='css']::before {
   visibility: visible;
 }
+
+@media screen and (max-width: 375px) {
+  .tabs__menu {
+    padding: 0 16px;
+  }
+}
