@@ -8,10 +8,6 @@
   --calendar-between: #eceffd;
 }
 
-html:not(.style-scope)[data-theme-dark] .calendar {
-  --calendar-between: var(--grey-4);
-}
-
 .calendar_preview {
   width: 85%;
   padding: 10px 20px;

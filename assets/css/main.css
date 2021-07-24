@@ -74,3 +74,7 @@ html:not(.style-scope)[data-theme-dark] {
 html:not(.style-scope)[data-mode='dark'] img {
   filter: brightness(0.8) contrast(1.2);
 }
+
+html:not(.style-scope)[data-theme-dark] .calendar {
+  --calendar-between: var(--grey-4);
+}
